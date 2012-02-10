@@ -20,7 +20,7 @@ tried compiling ruby with the zlib path set to $rvm_path/usr, I installed zlib
 via RVM and via apt, nothing worked. The first clue to what was going on was 
 when I ran:
 
-``` bash
+``` bash bash
 $ rvm requirements
 ```
 
