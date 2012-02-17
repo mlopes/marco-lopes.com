@@ -14,8 +14,8 @@ delicious_count: 3
 delicious_user: ~
 description: ~
 destination: public
-disqus_short_name: ~
-disqus_show_comment_count: false
+disqus_short_name: ruk
+disqus_show_comment_count: true
 email: ~
 excerpt_link: "Read on →"
 facebook_like: false
