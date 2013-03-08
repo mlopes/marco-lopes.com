@@ -45,12 +45,12 @@ $ haxelib run munit config
 This will ask a few questions about the folders where your tests, source code and compiled files will be, and create a `.munit` and `test.hxml` files.
 The `.munit` file will contain the folder configuration for our project. So assuming our project tree looks like the following:
 
-    > MyAwesomeProject
-    > |
-    > |-- deploy
-    > |-- report
-    > |-- src
-    > +-- test
+    MyAwesomeProject
+     |
+     |-- deploy
+     |-- report
+     |-- src
+     +-- test
 
 The `.munit` file should look something like this:
 
