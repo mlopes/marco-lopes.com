@@ -19,7 +19,7 @@ The file we'll need to use for signing your debug token is the `client-PBDT-xxxx
 We will also need to have the Blackberry NDK installed on the computer we'll be using to create and sign the token.
 In this post the NDK will be installed in `/Developer/SDKs/bbndk-2.1.0-beta1` and the keys placed in `~/.bbkeys`, therefore these are the paths we'll be using on all the examples.
 
-Before starting, we'll need to get the *PIN* of the device we want to create a key for. On the Blackberry device, go to `Setting`→`About`. From the `View information about your tablet` drop-down on the right, select `Hardware` and take note of the *PIN*. The *PIN* should look something like *1234ABCD*.
+Before starting, we'll need to get the **PIN** of the device we want to create a key for. On the Blackberry device, go to `Setting`→`About`. From the `View information about your tablet` drop-down on the right, select `Hardware` and take note of the **PIN**. The **PIN** should look something like **1234ABCD**.
 
 Move into the `~/.bbkeys` folder:
 
@@ -27,7 +27,7 @@ Move into the `~/.bbkeys` folder:
 $ cd ~/.bbkeys
 ```
 
-Now use the `blackberry-debugtokenrequest` utility, on the computer, to generate the token. We will need to provide the *PIN* we got from our device, the password used on our developer account to request the signing keys, and the name of the "bar" file which will be the token file itself.
+Now use the `blackberry-debugtokenrequest` utility, on the computer, to generate the token. We will need to provide the **PIN** we got from our device, the password used on our developer account to request the signing keys, and the name of the "bar" file which will be the token file itself.
 
 ``` bash
 $ /Developer/SDKs/bbndk-2.1.0-beta1/host/macosx/x86/usr/bin/blackberry-debugtokenrequest -storepass mystorepassword -devicepin 1234ABCD develop001.bar

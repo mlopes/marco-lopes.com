@@ -14,7 +14,7 @@ On the other hand, all of these projects seem to miss documentations and some gu
 
 The first problem to overcome was, choosing a testing framework. Haxe itself has a small native testing API, but it looked very basic, and so I decided to look for something else. The Haxe community doesn't seem much like a test driven community yet and it wasn't easy to find comparisons or documentation that would let me fairly compare any of the testing frameworks I came across.
 
-I ended up choosing *munit* because it seemed slightly better documented and it also seemed to be an relatively active project.
+I ended up choosing **munit** because it seemed slightly better documented and it also seemed to be an relatively active project.
 
 # Installing and configuring munit #
 
