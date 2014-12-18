@@ -6,9 +6,9 @@ require "stringex"
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
 ssh_user       = "mlopes@marco-lopes.com"
 ssh_port       = "22"
-document_root  = "/var/www/vhosts/marco-lopes/marco-lopes.com/"
+document_root  = "marco-lopes.com"
 rsync_delete   = true
-deploy_default = "rsync"
+deploy_default = "s3"
 rsync_args     = ""
 
 # This will be configured for you when you run config_deploy
@@ -242,6 +242,12 @@ task :rsync do
   end
   puts "## Deploying website via Rsync"
   ok_failed system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
+end
+
+desc "Deploy to amazon s3"
+task :s3 do
+  puts "Deploying via s3 from #{public_dir}/"
+  system "s3cmd put --recursive #{public_dir}/* s3://#{document_root}"
 end
 
 desc "deploy public directory to github pages"
