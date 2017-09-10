@@ -1,54 +1,24 @@
---- 
-author: "Marco Lopes"
-category_dir: blog/categories
-code_dir: downloads/code
-date_format: ordinal
-default_asides: 
-  - asides/recent_posts.html
-  - asides/github.html
-  - asides/twitter.html
-  - asides/delicious.html
-  - asides/pinboard.html
-  - asides/googleplus.html
-delicious_count: 3
-delicious_user: ~
-description: ~
-destination: public
-disqus_short_name: ruk
-disqus_show_comment_count: true
-email: ~
-excerpt_link: "Read on →"
-facebook_like: false
-github_repo_count: 0
-github_show_profile_link: true
-github_skip_forks: true
-github_user: ~
-google_analytics_tracking_id: ~
-google_plus_one: false
-google_plus_one_size: medium
-googleplus_hidden: false
-googleplus_user: ~
-markdown: rdiscount
-paginate: 10
-pagination_dir: blog
-permalink: "/blog/:year/:month/:day/:title/"
-pinboard_count: 3
-pinboard_user: ~
-plugins: plugins
-pygments: false
-recent_posts: 5
-root: /
-simple_search: "http://google.com/search"
-source: source
-subscribe_email: ~
-subscribe_rss: /atom.xml
-subtitle: "Things about things and some more stuff about stuff"
+# Site settings
 title: "Repeat Until Keypressed"
-titlecase: true
-twitter_follow_button: true
-twitter_show_follower_count: false
-twitter_show_replies: false
-twitter_tweet_button: true
-twitter_tweet_count: 4
-twitter_user: "mpmlopes"
-url: "http://www.marco-lopes.com"
+bye_message: "λ"
+baseurl: "/"
+url: "https://marco-lopes.com"
+disqus: ruk
+
+# Header settings
+nick: "mlopes"
+mail:
+    domain: "gmail"
+    ext: "com"
+    address: "marco.paulo.lopes"
+source_code: 
+    server: "github.com"
+    nick: "mlopes"
+blog: 
+    server: "marco-lopes.com"
+    nick: "mlopes"
+fingerprint_key: "5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
