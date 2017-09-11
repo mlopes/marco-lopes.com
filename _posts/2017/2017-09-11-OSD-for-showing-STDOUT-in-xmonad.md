@@ -30,7 +30,9 @@ pass the output of the CLI command, which is an IO action, and therefore not pur
 into the Dzen function that triggers the OSD.
 The function, `dzenConfig` has the following signature:
 
-`dzenConfig :: DzenConfig -> String -> X ()`
+```haskell
+dzenConfig :: DzenConfig -> String -> X ()
+```
 
 So the type of the first parameter is a `DzenConfig`. This should be quite
 straight forward, as, not surprisingly, most of the Dzen configuration
@@ -39,7 +41,7 @@ screen, centered, with a size of 800x30, so that I can show a long...ish
 single line of text, and to use a font like terminus.
 To sort out this first parameter this was what I've done:
 
-```
+```haskell
 import qualified XMonad.Util.Dzen as Dzen
 
 terminus = "-*-terminus-*-*-*-*-24-*-*-*-*-*-*-*"
@@ -54,7 +56,9 @@ might look a bit weird, but it actually makes sense in the end. I'm going to
 try to explain it here, but my hopes of succeding are very low. The function
 `center` has the following signature:
 
-`center :: Int -> Int -> ScreenId -> DzenConfig`
+```haskell
+center :: Int -> Int -> ScreenId -> DzenConfig
+```
 
 This means that it will take 2 Int, one ScreenId and will return a
 DzenConfigm but, you'll notice that we're calling it with only the 2 Int parameters.
@@ -63,7 +67,9 @@ Because in Haskell all functions are
 this, we actually get back a function with the signature `ScreenId ->
 DzenConfig`. Now, if you look at the signature of `onCurr`:
 
-`onCurr :: (ScreenId -> DzenConfig) -> DzenConfig`
+```haskell
+onCurr :: (ScreenId -> DzenConfig) -> DzenConfig
+```
 
 You'll see that it takes exactly a function frim `ScreenId` to `DzenConfig`,
 and returns a DzenConfig. So, by partially applying the two Int parameters to
@@ -82,7 +88,9 @@ function, from the package `XMonad.Util.Run`.
 
 The signature for `RunProcessWithInput`, is the following:
 
-`runProcessWithInput :: MonadIO m => FilePath -> [String] -> String -> m String`
+```haskell
+runProcessWithInput :: MonadIO m => FilePath -> [String] -> String -> m String
+```
 
 Now this is... expected, but it kind of causes us a problem. The return value
 of our function call is a `MonadIO` of `String`, but our OSD expects a `String`.
@@ -95,7 +103,7 @@ My IO action has to be contained, and I can't get my string out of it to use
 it in pure functions, so, my call to dzen, had to be moved into my IO function.
 So I ended up with this:
 
-```
+```haskell
 import qualified XMonad.Util.Dzen as Dzen
 
 import XMonad.Util.Run (runProcessWithInput)
@@ -113,7 +121,7 @@ specify there which command to run. So, for exemple to have `WinKey+m` showing
 me the song currently playing on `mpd` (music player daemon) using `mpc` (music player client),
 I do the following:
 
-```
+```haskell
 , ((modMask .|. shiftMask, xK_m),
   (externalCommandInPopUp "mpc" ["current"]))
 ```
