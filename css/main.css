@@ -67,6 +67,15 @@ a {
     border-left: 1px dashed rgba(255,102,0,0.5);
     border-right: 1px dashed rgba(255,102,0,0.5);
 }
+
+ul.posts {
+    list-style: none;
+}
+ul.posts li:before {
+    content: "$ >";
+    font-size: 0.7em;
+}
+
 main {
     text-align: left;
 }
