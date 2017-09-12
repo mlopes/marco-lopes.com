@@ -62,11 +62,26 @@ a {
     text-decoration: none;
     color: rgba(220,102,0,0.8);
 }
-.menu ul li a:hover {
+.menu ul li a:before {
+    content: "{";
+}
+.menu ul li a:hover::before {
+    content: "[";
+}
+
+.menu ul li a:hover::after {
+    content: "]";
+}
+
+.menu ul li a:after {
+    content: "}";
+}
+
+/* .menu ul li a:hover {
     padding: 2px;
     border-left: 1px dashed rgba(255,102,0,0.5);
     border-right: 1px dashed rgba(255,102,0,0.5);
-}
+} */
 
 ul.cli-bullets {
     list-style: none;
