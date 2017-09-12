@@ -43,7 +43,7 @@ So, I decided to start by implementing this rule. In order to do this, I describ
 
 This description of the code is used as the name of the first test, which then proceeds in describing how this will be achieved:
 
-```as3
+```java
 
     ...
 
@@ -79,7 +79,7 @@ Now we write the simplest piece of code that can make it pass, which is basicall
 
 ## Write just enough code to make it pass ##
 
-```as3
+```java
     ...
 
     public function getNextGenerationCellState(parentCellStatus:Int, numberOfNeighbours:Int):Int
@@ -103,7 +103,7 @@ So on to the second rule, which I described in the code as:
 
 And to test this:
 
-```as3
+```java
 
     public function itReturnsTrueForLiveCellWithTwoOrThreeNeighbours():Void
     {
@@ -121,7 +121,7 @@ Run the test, and see it fail for the right reason, which is the test expected t
 
 Now we will write again the minimal amount of code to make the test pass:
 
-```as3
+```java
     ...
 
     public function getNextGenerationCellState(parentCellStatus:Int, numberOfNeighbours:Int):Int
