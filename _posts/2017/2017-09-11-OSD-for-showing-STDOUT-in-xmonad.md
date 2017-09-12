@@ -28,18 +28,19 @@ Xmonad](https://hackage.haskell.org/package/xmonad-contrib-0.13/docs/XMonad-Util
 The first problem I had to deal with, as a newcomer to Haskell, was how to
 pass the output of the CLI command, which is an IO action, and therefore not pure,
 into the Dzen function that triggers the OSD.
-The function, `dzenConfig` has the following signature:
+The function, `dzenConfig`, will show a OSD with some text, using a specified
+configuration, and it has the following signature:
 
 ```haskell
 dzenConfig :: DzenConfig -> String -> X ()
 ```
 
 So the type of the first parameter is a `DzenConfig`. This should be quite
-straight forward, as, not surprisingly, most of the Dzen configuration
+straightforward, as, not surprisingly, most of the Dzen configuration
 functions return a `DzenConfig`. I wanted the OSD to show up in the current
 screen, centered, with a size of 800x30, so that I can show a long...ish
 single line of text, and to use a font like terminus.
-To sort out this first parameter this was what I've done:
+To sort out this first parameter here's what I've done:
 
 ```haskell
 import qualified XMonad.Util.Dzen as Dzen
@@ -49,7 +50,7 @@ terminus = "-*-terminus-*-*-*-*-24-*-*-*-*-*-*-*"
 Dzen.onCurr (Dzen.center 800 30) Dzen.>=> Dzen.font terminus
 ```
 
-This one is pretty straightforward. I've imported the `Dzen` module, I've done
+This one is pretty straightforward. I've imported the `Dzen` module using
 a qualified import because `font` and `>=>` clashed with functions similarly
 named in other namespaces. If you're not too familiarised with Haskell, this
 might look a bit weird, but it actually makes sense in the end. I'm going to
@@ -71,8 +72,8 @@ DzenConfig`. Now, if you look at the signature of `onCurr`:
 onCurr :: (ScreenId -> DzenConfig) -> DzenConfig
 ```
 
-You'll see that it takes exactly a function frim `ScreenId` to `DzenConfig`,
-and returns a DzenConfig. So, by partially applying the two Int parameters to
+You'll see that it takes exactly a function from `ScreenId` to `DzenConfig`,
+and returns a `DzenConfig`. So, by partially applying the two Int parameters to
 `center`, we get exactly what we need to pass to `onCurr`, and we get out of
 it a DzenConfig.
 
@@ -117,7 +118,7 @@ externalCommandInPopUp c p = do
 ```
 
 To use it, I bind a call to `externalCommandInPopUp` to a key combination, and
-specify there which command to run. So, for exemple to have `WinKey+m` showing
+specify there which command to run. So, for exemple to have `WinKey+Shift+m` showing
 me the song currently playing on `mpd` (music player daemon) using `mpc` (music player client),
 I do the following:
 
@@ -130,7 +131,7 @@ Important to note that the preceding comma in this example is there only to
 indicate that this keybinding is one amongst others in a list of keybindings.
 Had this be the first one on the list, it wouldn't have the comma. For more
 details on how to define `Xmonad` keybindgins, refer to the `Xmonad`
-configuration.
+documentation.
 
 The full `XMonad` configuration where this example is in use, can be found
 [here](https://github.com/mlopes/dotfiles/blob/e12e588257d3938e0e96d1618a98009b9114567a/.xmonad/xmonad.hs).
