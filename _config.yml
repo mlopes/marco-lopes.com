@@ -11,10 +11,9 @@ mail:
     domain: "gmail"
     ext: "com"
     address: "marco.paulo.lopes"
-source_code: 
-    server: "github.com"
+github:
     nick: "mlopes"
-fingerprint_key: "5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"
+fingerprint_key: "E57A 23D4 045E A65A 1AE1 43AF 011F 422E 7F52 FFA8"
 
 # Build settings
 markdown: kramdown

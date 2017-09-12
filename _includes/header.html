@@ -8,19 +8,19 @@
     <span class="function">main</span> <span class="reserved">= do</span>
     </p>
     <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/mlopes"><span class="function">putStrLn</span> ( <span class="string">"https://github.com/"</span> <span class="reserved">++</span> username )</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/{{site.github.nick}}" target="_blank"><span class="function">putStrLn</span> ( <span class="string">"https://github.com/"</span> <span class="reserved">++</span> username )</a>
     </p>
     <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( address <span class="reserved">++</span> <span class="string">"@gmail.com"</span> )
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( address <span class="reserved">++</span> <span class="string">"@{{ site.mail.domain }}.{{ site.mail.ext }}"</span> )
     </p>
     <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( </span> <span class="string"><a href="{{ site.baseurl }}misc/pubkey.gpg.txt" target="_blank">"E57A 23D4 045E A65A 1AE1 43AF 011F 422E 7F52 FFA8"</a></span> )
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( </span> <span class="string"><a href="{{ site.baseurl }}misc/pubkey.gpg.txt" target="_blank">"{{ site.fingerprint_key }}"</a></span> )
     </p>
     <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="reserved">where</span> address = <span class="string">"marco.paulo.lopes"</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="reserved">where</span> address = <span class="string">"{{ site.mail.address }}"</span>
     </p>
     <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username = <span class="string">"mlopes"</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username = <span class="string">"{{ site.github.nick }}"</span>
     </p>
   </div>
 </header>
