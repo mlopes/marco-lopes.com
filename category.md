@@ -4,7 +4,7 @@ title: "Category List"
 permalink: /category/
 ---
 
-<ul class="tag-box inline">
+<ul class="tag-box inline cli-bullets">
 {% assign list = site.tags | sort %}
     {% for category in list %}
         <li>
@@ -20,7 +20,7 @@ permalink: /category/
 {% assign taglist = site.tags | sort %}
 {% for category in taglist %}
  <h2 id="{{ category[0] }}">{{ category[0] }}</h2>
- <ul class="post-list">
+ <ul class="post-list cli-bullets">
   {% assign list = category[1] %}
   {% for post in list %}
    <li>

@@ -68,11 +68,12 @@ a {
     border-right: 1px dashed rgba(255,102,0,0.5);
 }
 
-ul.posts {
+ul.cli-bullets {
     list-style: none;
 }
-ul.posts li:before {
-    content: "$ >";
+
+ul.cli-bullets li:before {
+    content: "$ > ";
     font-size: 0.7em;
 }
 
