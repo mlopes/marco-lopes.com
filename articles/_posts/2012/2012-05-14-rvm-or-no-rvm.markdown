@@ -3,8 +3,6 @@ layout: post
 title: "Rvm or no rvm?"
 date: 2012-05-14 20:59
 comments: true
-categories: 
-    - posts
 tags:
     - ruby
 ---

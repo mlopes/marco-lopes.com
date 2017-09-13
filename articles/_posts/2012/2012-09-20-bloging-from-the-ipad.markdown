@@ -4,8 +4,6 @@ title: "Bloging from the iPad"
 date: 2012-09-20 12:05
 comments: true
 published: false
-categories: 
-    - posts
 tags:
     - ideas
 ---

@@ -4,8 +4,6 @@ title: "OSD to show STDOUT from a command in XMonad"
 date: 2017-09-11 22:00
 comments: true
 published: true
-categories:
-    - posts
 tags:
     - haskell
     - xmonad

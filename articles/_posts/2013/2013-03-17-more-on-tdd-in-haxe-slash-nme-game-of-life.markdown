@@ -3,8 +3,6 @@ layout: post
 title: "More on TDD in Haxe/NME - Game Of Life"
 date: 2013-03-17 20:02
 comments: true
-categories:
-    - posts
 tags:
     - haxe
     - nme

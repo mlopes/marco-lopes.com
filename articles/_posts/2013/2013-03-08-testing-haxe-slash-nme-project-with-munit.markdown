@@ -4,8 +4,6 @@ title: "Testing Haxe/NME project with munit"
 date: 2013-03-08 11:15
 comments: true
 published: true
-categories: 
-    - posts
 tags:
     - haxe
     - nme

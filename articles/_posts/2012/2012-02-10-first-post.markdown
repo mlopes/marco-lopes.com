@@ -3,8 +3,6 @@ layout: post
 title: "First Post"
 date: 2012-02-10 10:12
 comments: true
-categories:
-    - posts
 tags:
     - octopress
 author: "Marco Lopes"

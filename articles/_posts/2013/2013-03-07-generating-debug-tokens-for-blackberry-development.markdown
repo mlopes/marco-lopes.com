@@ -3,8 +3,6 @@ layout: post
 title: "Debug Tokens for Blackberry Playbook development with NME"
 date: 2013-03-07 22:02
 comments: true
-categories:
-    - posts
 tags:
     - blackberry
     - nme
