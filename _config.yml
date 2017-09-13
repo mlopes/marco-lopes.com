@@ -8,6 +8,7 @@ include: [ _pages ]
 pagesdir: _pages
 destination: _site
 
+exclude: ["Gemfile*", "README.*", "Rakefile"]
 
 disqus: ruk
 
