@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Modelling an Extension By Example"
+title: "Modelling an Extension By Example - Manchester Magento Usergroup"
 date: 2015-02-11 19:00
 comments: true
 published: true
@@ -17,6 +17,8 @@ a Domain Driven Design technique which uses Gherkin examples as a framework to
 drive the development of software, to achieve decoupling from legacy
 frameworks, a consistent and cohesive core domain model, and a maintainable
 application.
+
+![Speaking in Manchester on the topic of Modelling by Example](/assets/talks/images/2015-02-11-marco-modelling-by-example-manchester.jpg){: height="384px" width="512px"}
 
 The videos was available online, but has been removed, I'm working on getting
 it back online, and will share it here when available.
