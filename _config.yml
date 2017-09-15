@@ -13,14 +13,10 @@ exclude: ["Gemfile*", "README.*", "Rakefile"]
 disqus: ruk
 
 # Header settings
-nick: "mlopes"
-mail:
-    domain: "gmail"
-    ext: "com"
-    address: "marco.paulo.lopes"
-github:
-    nick: "mlopes"
-fingerprint_key: "E57A 23D4 045E A65A 1AE1 43AF 011F 422E 7F52 FFA8"
+social:
+    github: "mlopes"
+    twitter: "mpmlopes"
+    fingerprint_key: "E57A 23D4 045E A65A 1AE1 43AF 011F 422E 7F52 FFA8"
 
 google:
     analytics: "UA-106464365-1"

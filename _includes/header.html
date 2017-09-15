@@ -9,19 +9,19 @@
         <span class="function">main</span> <span class="reserved">= do</span>
         </p>
         <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/{{site.github.nick}}" target="_blank"><span class="function">putStrLn</span> ( <span class="string">"https://github.com/"</span> <span class="reserved">++</span> username )</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/{{site.social.github}}" target="_blank"><span class="function">putStrLn</span> ( <span class="string">"https://github.com/"</span> <span class="reserved">++</span> githubUser )</a>
         </p>
         <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( address <span class="reserved">++</span> <span class="string">"@{{ site.mail.domain }}.{{ site.mail.ext }}"</span> )
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/{{site.social.twitter}}" target="_blank"><span class="function">putStrLn</span> ( <span class="string">"https://twitter.com/"</span> <span class="reserved">++</span> twitterUser )</a>
         </p>
         <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( </span> <span class="string"><a href="{{ site.baseurl }}misc/pubkey.gpg.txt" target="_blank">"{{ site.fingerprint_key }}"</a></span> )
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( </span> <span class="string"><a href="{{ site.baseurl }}misc/pubkey.gpg.txt" target="_blank">"{{ site.social.fingerprint_key }}"</a></span> )
         </p>
         <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="reserved">where</span> address = <span class="string">"{{ site.mail.address }}"</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="reserved">where</span> twitterUser = <span class="string">"{{ site.social.twitter }}"</span>
         </p>
         <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username = <span class="string">"{{ site.github.nick }}"</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;githubUser = <span class="string">"{{ site.social.github }}"</span>
         </p>
     </div>
   </div>
