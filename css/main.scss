@@ -170,6 +170,18 @@ caption {
 .keyword {
     color: $white_70;
 }
+
+div.header-code {
+  span.string {
+    a {
+	  color: $blaze_orange_90;
+    }
+  }
+  a {
+    color: $white_50;
+  }
+}
+
 blockquote {
     border-left: unset;
     margin: unset;
