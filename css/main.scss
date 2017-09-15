@@ -1,7 +1,7 @@
 ---
 ---
-@import 'syntax-highlight';
 @import 'vars';
+@import 'son-of-obsidian';
 
 body {
     border-top: 1px dashed $white_50;
@@ -93,12 +93,6 @@ a {
 }
 main {
     text-align: left;
-}
-code {
-    background-color: $color_log_cabin_approx;
-    color: $color_east_bay_approx;
-    font-weight: bold;
-    padding: 2px 3px;
 }
 pre {
     background-color: $white_5;
