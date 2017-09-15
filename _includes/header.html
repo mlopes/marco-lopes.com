@@ -1,28 +1,30 @@
 <header class="row">
   <div class="col-lg-8 col-lg-offset-2">
-      <h1 class=""><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
-    <p>
-    <span class="function">main</span> <span class="reserved">::</span> IO ()
-    </p>
-    <p>
-    <span class="function">main</span> <span class="reserved">= do</span>
-    </p>
-    <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/{{site.github.nick}}" target="_blank"><span class="function">putStrLn</span> ( <span class="string">"https://github.com/"</span> <span class="reserved">++</span> username )</a>
-    </p>
-    <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( address <span class="reserved">++</span> <span class="string">"@{{ site.mail.domain }}.{{ site.mail.ext }}"</span> )
-    </p>
-    <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( </span> <span class="string"><a href="{{ site.baseurl }}misc/pubkey.gpg.txt" target="_blank">"{{ site.fingerprint_key }}"</a></span> )
-    </p>
-    <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span class="reserved">where</span> address = <span class="string">"{{ site.mail.address }}"</span>
-    </p>
-    <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username = <span class="string">"{{ site.github.nick }}"</span>
-    </p>
+    <h1 class=""><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+    <div class="header-code">
+        <p>
+            <span class="function">main</span> <span class="reserved">::</span> IO ()
+        </p>
+        <p>
+        <span class="function">main</span> <span class="reserved">= do</span>
+        </p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/{{site.github.nick}}" target="_blank"><span class="function">putStrLn</span> ( <span class="string">"https://github.com/"</span> <span class="reserved">++</span> username )</a>
+        </p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( address <span class="reserved">++</span> <span class="string">"@{{ site.mail.domain }}.{{ site.mail.ext }}"</span> )
+        </p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( </span> <span class="string"><a href="{{ site.baseurl }}misc/pubkey.gpg.txt" target="_blank">"{{ site.fingerprint_key }}"</a></span> )
+        </p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="reserved">where</span> address = <span class="string">"{{ site.mail.address }}"</span>
+        </p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username = <span class="string">"{{ site.github.nick }}"</span>
+        </p>
+    </div>
   </div>
 </header>
 
-{% include menu.html %}
+{% include navigation.html %}
