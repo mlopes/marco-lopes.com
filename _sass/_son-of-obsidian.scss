@@ -15,6 +15,7 @@ $color_lightning_yellow_approx: #ffcd22;
 
 .highlight {
     pre {
+		display: inline-block;
 		code {
 			border: 0px;
 		}
@@ -219,6 +220,13 @@ $color_lightning_yellow_approx: #ffcd22;
 }
 pre.highlight {
     background-color: $color_log_cabin_approx;
+    white-space: nowrap;
+    word-wrap: normal;
+	overflow: auto;
+	overflow-x: auto;
+	code {
+        white-space: pre;
+    }
 }
 
 p {
