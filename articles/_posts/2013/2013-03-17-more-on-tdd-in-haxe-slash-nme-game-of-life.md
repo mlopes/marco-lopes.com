@@ -37,7 +37,7 @@ The first [rule](http://en.wikipedia.org/wiki/Conway_game_of_life#Rules) of the 
 
 So, I decided to start by implementing this rule. In order to do this, I described my code as doing the following:
 
-> It returns false for live cell with less than two neighbors
+`It returns false for live cell with less than two neighbors`
 
 This description of the code is used as the name of the first test, which then proceeds in describing how this will be achieved:
 
@@ -97,7 +97,7 @@ We can now look at our code and refactor it. Because we're only on the first ite
 
 So on to the second rule, which I described in the code as:
 
-> It returns true for live cell with two or three neighbors
+`It returns true for live cell with two or three neighbors`
 
 And to test this:
 
