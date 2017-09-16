@@ -29,18 +29,28 @@ h1 {
 }
 h2 {
     color: $blaze_orange_70;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 h3 {
     color: $blaze_orange_60;
+    font-size: 1.6em;
+    font-weight: bold;
 }
 h4 {
     color: $blaze_orange_50;
+    font-size: 1.4em;
+    font-weight: bold;
 }
 h5 {
     color: $blaze_orange_40;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 h6 {
     color: $blaze_orange_30;
+    font-size: 1em;
+    font-weight: bold;
 }
 footer {
     color: $blaze_orange_80;
@@ -189,7 +199,7 @@ div.header-code {
 blockquote {
     border-left: unset;
     margin: unset;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 ul.cli-bullets {
     list-style: none;
