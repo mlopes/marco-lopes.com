@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: $font_0;
-    font-size: 12px;
+    font-size: 1.3em;
     line-height: unset !important;
     color: $white_60;
     text-align: center;
@@ -17,7 +17,7 @@ body {
 }
 h1 {
     color: $blaze_orange_80;
-    font-size: 24px;
+    font-size: 2.2em;
     font-family: $font_0;
     font-weight: bold;
 }
@@ -104,7 +104,7 @@ pre {
     border-radius: 3px;
     overflow: auto;
     font-family: $font_0;
-    font-size: 12px;
+    font-size: 0.9em;
     color: $white_40;
 }
 img {
@@ -183,7 +183,7 @@ div.header-code {
 blockquote {
     border-left: unset;
     margin: unset;
-    font-size: 12px;
+    font-size: 1.3em;
 }
 ul.cli-bullets {
     list-style: none;
