@@ -18,7 +18,7 @@ drive the development of software, to achieve decoupling from legacy
 frameworks, a consistent and cohesive core domain model, and a maintainable
 application.
 
-![Speaking in Manchester on the topic of Modelling by Example](/assets/talks/images/2015-02-11-marco-modelling-by-example-manchester.jpg){: height="384px" width="512px"}
+![Speaking in Manchester on the topic of Modelling by Example](/assets/talks/images/2015-02-11-marco-modelling-by-example-manchester.jpg){: class="img-responsive"}
 
 The videos was available online, but has been removed, I'm working on getting
 it back online, and will share it here when available.

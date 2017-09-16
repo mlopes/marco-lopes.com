@@ -18,6 +18,8 @@ development.
 
 The video is publicly available online here:
 
+<div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315"
 src="https://www.youtube.com/embed/-oL3Yfiq_kw" frameborder="0"
 allowfullscreen></iframe>
+</div>

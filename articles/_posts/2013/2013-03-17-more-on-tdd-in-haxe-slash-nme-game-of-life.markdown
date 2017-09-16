@@ -153,4 +153,6 @@ Game is owned by us, so why is it not tested? Well, the Game class is not part o
 
 Take a good look at the test, and how they make the implementation evolve, give it a try to some **code katas**, practice TDD as much as you can, because you'll see the benefits in your code every day. Remember that the way you approach the problem should be your own, and don't let this example stick you to a certain path. Any questions, suggestions or improvements to this post, please, let me know.
 
+<div class="embed-responsive embed-responsive-4by3">
 <iframe src="/assets/posts/js/GameOfLife/" style="width: 640px; heigth: 480px"></iframe>
+</div>

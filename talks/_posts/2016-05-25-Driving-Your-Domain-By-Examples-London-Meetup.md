@@ -24,6 +24,6 @@ src="//speakerdeck.com/assets/embed.js"></script>
 
 The video is also available online:
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/zt5mcdVUK1c?start=2445" frameborder="0"
-allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zt5mcdVUK1c?start=2445" frameborder="0" allowfullscreen></iframe>
+</div>

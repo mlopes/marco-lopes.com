@@ -15,4 +15,4 @@ A version of the same talk delivered earlier at the Manchester Magento User Grou
 Example](http://stakeholderwhisperer.com/posts/2014/10/introducing-modelling-by-example).
 This time, it was delivered at Inviqa Dev Day, Inviqa's internal conference.
 
-![Speaking at Inviqa Dev Day February 2015 about Modelling by Example](/assets/talks/images/2015-02-26-marco-modelling-by-example.jpg){: height="382" width="511"}
+![Speaking at Inviqa Dev Day February 2015 about Modelling by Example](/assets/talks/images/2015-02-26-marco-modelling-by-example.jpg){: class="img-responsive"}
