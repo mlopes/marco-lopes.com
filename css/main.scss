@@ -15,9 +15,15 @@ body {
     text-align: center;
     //width: 800px;
 }
+div.logo {
+    color: $blaze_orange_90;
+    font-size: 2.5em;
+    font-family: $font_0;
+    font-weight: bold;
+}
 h1 {
     color: $blaze_orange_80;
-    font-size: 2.2em;
+    font-size: 2.0em;
     font-family: $font_0;
     font-weight: bold;
 }
