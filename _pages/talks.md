@@ -4,7 +4,7 @@ title: "Talks"
 permalink: /talks/
 ---
 
-A list with talks that I have presentation somewhere.
+I sometimes give talks on a variety of subjects, this section contains descriptions of those talks, as well as the slides and videos when possible.
 
 <ul class="posts">
     {% for post in site.categories.talks %}
