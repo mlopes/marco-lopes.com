@@ -96,6 +96,7 @@ a {
             display: inline;
             margin-left: 5px;
             a {
+                text-decoration: none;
                 color: $color-primary-0;
                 &:before {
                     content: '{';
