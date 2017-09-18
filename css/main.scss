@@ -198,7 +198,7 @@ div.header-code {
 
 blockquote {
     border-left: 1px dashed $color-primary-5;
-	font-style: Italic;
+    font-style: Italic;
     font-size: 1.2em;
 }
 ul.cli-bullets {
@@ -207,4 +207,8 @@ ul.cli-bullets {
         content: ' $ > ';
         font-size: 0.7em;
     }
+}
+
+.post-date {
+    color: $color-primary-3;
 }
