@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Driving Your Domain By Examples - Developers Paradise"
+title: "Driving Your Domain By Examples(1)"
 date: 2016-04-26 13:30
 comments: true
 published: true
+event: Developers Paradise
 tags:
     - talks
     - DDD

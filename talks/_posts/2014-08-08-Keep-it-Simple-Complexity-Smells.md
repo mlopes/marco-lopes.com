@@ -4,6 +4,7 @@ title: "Keep It Simle - Complexity Smells"
 date: 2014-08-08 12:00
 comments: true
 published: true
+event: Inviqa eL
 tags:
     - talks
     - DDD

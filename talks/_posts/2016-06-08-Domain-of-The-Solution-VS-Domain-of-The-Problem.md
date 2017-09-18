@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Domain of the Solution vs Domain of the Problem - Inviqa Dev Day"
+title: "Domain of the Solution vs Domain of the Problem"
 date: 2016-06-08 17:25
 comments: true
 published: true
+event: Inviqa DevDay
 tags:
     - talks
     - DDD

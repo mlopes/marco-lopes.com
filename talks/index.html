@@ -10,8 +10,8 @@ I sometimes give talks on a variety of subjects, this section contains descripti
 <ul class="posts cli-bullets">
     {% for post in site.categories.talks %}
         <li>
-            <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>: 
-            <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+            <span class="talk-date">{{ post.date | date: "%b %d, %Y" }}</span>: 
+            <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>{% if post.event %}<span class="talk-event">@{{ post.event }}</span>{% endif %}
         </li>
     {% endfor %}
 </ul>

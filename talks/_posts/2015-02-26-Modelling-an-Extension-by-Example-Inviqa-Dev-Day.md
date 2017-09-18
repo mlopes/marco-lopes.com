@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Modelling an Extension By Example - Inviqa Dev Day"
+title: "Modelling an Extension By Example(2)"
 date: 2015-02-26 15:05
 comments: true
 published: true
+event: Inviqa DevDay
 tags:
     - talks
     - DDD

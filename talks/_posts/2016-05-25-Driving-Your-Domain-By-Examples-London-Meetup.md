@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Driving Your Domain By Examples - London Magento Meetup"
+title: "Driving Your Domain By Examples(2)"
 date: 2016-05-25 19:30
 comments: true
 published: true
+event: London Magento Meetup
 tags:
     - talks
     - DDD

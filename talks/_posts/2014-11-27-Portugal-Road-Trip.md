@@ -4,6 +4,7 @@ title: "Portugal Road Trip"
 date: 2014-11-27 12:00
 comments: true
 published: true
+event: Inviqa eL
 tags:
     - talks
     - trips

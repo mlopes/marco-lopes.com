@@ -4,6 +4,7 @@ title: "Homemade Game Development"
 date: 2017-05-04 12:00
 comments: true
 published: true
+event: Inviqa eL
 tags:
     - talks
     - games

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Driving Your Domain By Examples - Code Mastery Meetup"
+title: "Driving Your Domain By Examples(3)"
 date: 2017-03-22 19:00
 comments: true
 published: true
+event: Code Mastery Meetup
 tags:
     - talks
     - DDD

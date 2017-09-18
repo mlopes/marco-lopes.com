@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Modelling an Extension By Example - Manchester Magento Usergroup"
+title: "Modelling an Extension By Example(1)"
 date: 2015-02-11 19:00
 comments: true
 published: true
+event: Manchester Magento Usergroup
 tags:
     - talks
     - DDD
