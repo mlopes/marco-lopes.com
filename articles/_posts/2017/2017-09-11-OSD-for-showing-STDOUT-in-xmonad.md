@@ -17,7 +17,7 @@ go a step further in the configuration of my working environment.
 
 A few days ago, I've written some configuration to map a keybinding to an
 action where a command is ran, and then the output of that command is
-captured, and shown in a OSD.
+captured, and shown in a OSD (On Screen Display).
 
 To achieve this, I've used [Dzen](https://github.com/robm/dzen), and the [Dzen
 wrapper for
@@ -25,7 +25,7 @@ Xmonad](https://hackage.haskell.org/package/xmonad-contrib-0.13/docs/XMonad-Util
 
 The first problem I had to deal with, as a newcomer to Haskell, was how to
 pass the output of the CLI command, which is an IO action, and therefore not pure,
-into the Dzen function that triggers the OSD.
+into the `Dzen` function that triggers the OSD.
 The function, `dzenConfig`, will show a OSD with some text, using a specified
 configuration, and it has the following signature:
 
@@ -52,8 +52,7 @@ This one is pretty straightforward. I've imported the `Dzen` module using
 a qualified import because `font` and `>=>` clashed with functions similarly
 named in other namespaces. If you're not too familiarised with Haskell, this
 might look a bit weird, but it actually makes sense in the end. I'm going to
-try to explain it here, but my hopes of succeding are very low. The function
-`center` has the following signature:
+try to explain it here. The function `center` has the following signature:
 
 ```haskell
 center :: Int -> Int -> ScreenId -> DzenConfig
@@ -128,7 +127,7 @@ I do the following:
 Important to note that the preceding comma in this example is there only to
 indicate that this keybinding is one amongst others in a list of keybindings.
 Had this be the first one on the list, it wouldn't have the comma. For more
-details on how to define `Xmonad` keybindgins, refer to the `Xmonad`
+details on how to define `Xmonad` keybindings, refer to the `Xmonad`
 documentation.
 
 The full `XMonad` configuration where this example is in use, can be found
