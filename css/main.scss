@@ -1,228 +1,237 @@
 ---
 ---
-@import 'vars';
-@import 'son-of-obsidian';
+@import'vars';
+@import'son-of-obsidian';
 
-body {
-    border-top: 1px dashed $color-primary-5;
-    background-color: $color_background;
-    margin: 0 auto;
-    padding: 0;
-    font-family: $font_0, sans-serif;
-    font-size: 1.6em;
-    line-height: unset !important;
-    color: $color-primary-5;
-    text-align: center;
-    //width: 800px;
+body{
+   border-top: 1px dashed $color-primary-5;
+   background-color: $color_background;
+   margin: 0 auto;
+   padding: 0;
+   font-family: $font_0, sans-serif;
+   font-size: 1.6em;
+   line-height: unset !important;
+   color: $color-primary-5;
+   text-align: center;
+   //width: 800px;
 }
-div.logo {
-    color: $color-primary-2;
-    font-size: 2.5em;
-    font-family: $font_0;
-    font-weight: bold;
-    a {
-        text-decoration: none;
-        color: $color-primary-2;
-        &:hover {
+div.logo{
+   color: $color-primary-2;
+   font-size: 2.5em;
+   font-family: $font_0;
+   font-weight: bold;
+   a {
+       text-decoration: none;
+       color: $color-primary-2;
+       &:hover {
+           color: $color-primary-2;
+       }
+   }
+}
+h1{
+   color: $color-primary-2;
+   font-size: 2.0em;
+   font-family: $font_0;
+   font-weight: bold;
+}
+h2{
+   color: $color-primary-2;
+   font-size: 1.8em;
+   font-weight: bold;
+
+   span.reference {
+       font-size: 0.5em;
+       vertical-align: super;
+       color: $color-contrast-3;
+       a {
+           color: $color-contrast-0;
+       }
+   }
+}
+h3{
+   color: $color-primary-2;
+   font-size: 1.6em;
+   font-weight: bold;
+}
+h4{
+   color: $color-primary-2;
+   font-size: 1.4em;
+   font-weight: bold;
+}
+h5{
+   color: $color-primary-2;
+   font-size: 1.2em;
+   font-weight: bold;
+}
+h6{
+   color: $color-primary-2;
+   font-size: 1em;
+   font-weight: bold;
+}
+footer{
+   color: $color-primary-0;
+   font-weight: bold;
+   //width: 60%;
+   border-top: dashed 1px $color-primary-5;
+   margin: 20px auto 15px;
+   padding-top: 10px;
+}
+header{
+   margin-top: 25px;
+   margin-bottom: 10px;
+   color: $color-primary-1;
+   p {
+       text-align: left;
+       margin: 0;
+       color: $color-primary-5;
+   }
+}
+a{
+   text-decoration: none;
+   color: $color-primary-1;
+   &:hover {
+       color: $color-primary-0;
+   }
+}
+.menu{
+   border-top: 1px dashed $color-primary-5;
+   border-bottom: 1px dashed $color-primary-5;
+   margin-bottom: 10px;
+   ul {
+       margin-top: 12px;
+       margin-bottom: 12px;
+       padding-left: 0;
+       li {
+           display: inline;
+           margin-left: 5px;
+           a {
+               text-decoration: none;
+               color: $color-primary-0;
+               &:before {
+                   content: '{';
+               }
+               &:hover::before {
+                   content: '[';
+               }
+               &:hover::after {
+                   content: ']';
+               }
+               &:after {
+                   content: '}';
+               }
+           }
+       }
+   }
+}
+main{
+   text-align: left;
+}
+pre{
+   background-color: $color-background;
+   border: 1px dashed $color-primary-5;
+   padding: 8px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 3px;
+   overflow: auto;
+   font-family: $font_0;
+   font-size: 1em;
+   color: $color-primary-5;
+}
+img{
+   border: 1px dashed $color-primary-5;
+   padding: 8px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 3px;
+}
+iframe{
+   width: 750px;
+   height: 400px;
+   border: 1px dashed $color-primary-5;
+   padding: 8px;
+   margin-bottom: 10px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+   border-radius: 3px;
+}
+.feed-recomendation{
+   border-top: 1px dashed $color-primary-5;
+   border-bottom: 1px dashed $color-primary-5;
+   margin-top: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+audio{
+   width: 90%;
+}
+table{
+   width: 100%;
+   border-collapse: collapse;
+   text-align: center;
+   a {
+       color: $color-primary-5;
+   }
+}
+td{
+   border: 1px dashed $color-primary-5;
+}
+caption{
+   display: none;
+}
+
+.reserved{
+   color: $color-primary-3;
+}
+.string{
+   color: $color-primary-2;
+}
+.function{
+   color: $yellow_50;
+}
+
+div.header-code{
+    font-family: $font_1;
+    font-size: 0.75em;
+    span.string {
+        a {
             color: $color-primary-2;
         }
     }
-}
-h1 {
-    color: $color-primary-2;
-    font-size: 2.0em;
-    font-family: $font_0;
-    font-weight: bold;
-}
-h2 {
-    color: $color-primary-2;
-    font-size: 1.8em;
-    font-weight: bold;
-}
-h3 {
-    color: $color-primary-2;
-    font-size: 1.6em;
-    font-weight: bold;
-}
-h4 {
-    color: $color-primary-2;
-    font-size: 1.4em;
-    font-weight: bold;
-}
-h5 {
-    color: $color-primary-2;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-h6 {
-    color: $color-primary-2;
-    font-size: 1em;
-    font-weight: bold;
-}
-footer {
-    color: $color-primary-0;
-    font-weight: bold;
-    //width: 60%;
-    border-top: dashed 1px $color-primary-5;
-    margin: 20px auto 15px;
-    padding-top: 10px;
-}
-header {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    color: $color-primary-1;
-    p {
-        text-align: left;
-        margin: 0;
-        color: $color-primary-5;
-    }
-}
-a {
-    text-decoration: none;
-    color: $color-primary-1;
-    &:hover {
-        color: $color-primary-0;
-    }
-}
-.menu {
-    border-top: 1px dashed $color-primary-5;
-    border-bottom: 1px dashed $color-primary-5;
-    margin-bottom: 10px;
-    ul {
-        margin-top: 12px;
-        margin-bottom: 12px;
-        padding-left: 0;
-        li {
-            display: inline;
-            margin-left: 5px;
-            a {
-                text-decoration: none;
-                color: $color-primary-0;
-                &:before {
-                    content: '{';
-                }
-                &:hover::before {
-                    content: '[';
-                }
-                &:hover::after {
-                    content: ']';
-                }
-                &:after {
-                    content: '}';
-                }
-            }
-        }
-    }
-}
-main {
-    text-align: left;
-}
-pre {
-    background-color: $color-background;
-    border: 1px dashed $color-primary-5;
-    padding: 8px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-    border-radius: 3px;
-    overflow: auto;
-    font-family: $font_0;
-    font-size: 1em;
-    color: $color-primary-5;
-}
-img {
-    border: 1px dashed $color-primary-5;
-    padding: 8px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-    border-radius: 3px;
-}
-iframe {
-    width: 750px;
-    height: 400px;
-    border: 1px dashed $color-primary-5;
-    padding: 8px;
-    margin-bottom: 10px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-    border-radius: 3px;
-}
-.feed-recomendation {
-    border-top: 1px dashed $color-primary-5;
-    border-bottom: 1px dashed $color-primary-5;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-audio {
-    width: 90%;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
     a {
         color: $color-primary-5;
     }
 }
-td {
-    border: 1px dashed $color-primary-5;
+
+blockquote{
+   border-left: 1px dashed $color-primary-5;
+   font-style: Italic;
+   font-size: 1.2em;
 }
-caption {
-    display: none;
+ul.cli-bullets{
+   list-style: none;
+   li:before {
+       content: ' $ > ';
+       font-size: 0.7em;
+   }
 }
 
-.reserved {
-    color: $color-primary-3;
-}
-.string {
-    color: $color-primary-2;
-}
-.function {
-    color: $yellow_50;
+.talk-date{
+   color: $color-primary-3;
+   font-size: 0.8em;
 }
 
-div.header-code {
-  font-family: $font_1;
-  font-size: 0.75em;
-  span.string {
-    a {
-	  color: $color-primary-2;
-    }
-  }
-  a {
-    color: $color-primary-5;
-  }
+.talk-event{
+   color: $color-primary-0;
+   font-size: 0.8em;
 }
 
-blockquote {
-    border-left: 1px dashed $color-primary-5;
-    font-style: Italic;
-    font-size: 1.2em;
-}
-ul.cli-bullets {
-    list-style: none;
-    li:before {
-        content: ' $ > ';
-        font-size: 0.7em;
-    }
-}
-
-.talk-date {
-    color: $color-primary-3;
-    font-size: 0.8em;
-}
-
-.talk-event {
-    color: $color-primary-0;
-    font-size: 0.8em;
-}
-
-.feed-recomendation {
-    font-size: 0.7em;
-    margin-top: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
+.feed-recomendation{
+   font-size: 0.7em;
+   margin-top: 2em;
+   padding-top: 2em;
+   padding-bottom: 2em;
 }
