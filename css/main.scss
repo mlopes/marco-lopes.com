@@ -9,16 +9,22 @@ body{
    margin: 0 auto;
    padding: 0;
    font-family: $font_0, sans-serif;
-   font-size: 1.6em;
    line-height: unset !important;
    color: $color-primary-5;
    text-align: center;
-   //width: 800px;
+   font-size: 14px;
 }
+
+@media screen and (min-width: 500px){
+    body{
+        font-size: calc( 14px + 2 * ((100vw - 500px) / 1500))
+    }
+    font-family: $font_0, sans-serif;
+}
+
 div.logo{
    color: $color-primary-2;
-   font-size: 2.5em;
-   font-family: $font_0;
+   font-size: 2em;
    font-weight: bold;
    a {
        text-decoration: none;
@@ -30,14 +36,13 @@ div.logo{
 }
 h1{
    color: $color-primary-2;
-   font-size: 2.0em;
-   font-family: $font_0;
    font-weight: bold;
+   font-size: 2em;
 }
 h2{
    color: $color-primary-2;
-   font-size: 1.8em;
    font-weight: bold;
+   font-size: 1.75em;
 
    span.reference {
        font-size: 0.5em;
@@ -50,28 +55,23 @@ h2{
 }
 h3{
    color: $color-primary-2;
-   font-size: 1.6em;
    font-weight: bold;
 }
 h4{
    color: $color-primary-2;
-   font-size: 1.4em;
    font-weight: bold;
 }
 h5{
    color: $color-primary-2;
-   font-size: 1.2em;
    font-weight: bold;
 }
 h6{
    color: $color-primary-2;
-   font-size: 1em;
    font-weight: bold;
 }
 footer{
    color: $color-primary-0;
    font-weight: bold;
-   //width: 60%;
    border-top: dashed 1px $color-primary-5;
    margin: 20px auto 15px;
    padding-top: 10px;
@@ -135,8 +135,7 @@ pre{
    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
    border-radius: 3px;
    overflow: auto;
-   font-family: $font_0;
-   font-size: 1em;
+   font-size: 0.9em;
    color: $color-primary-5;
 }
 img{
