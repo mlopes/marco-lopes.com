@@ -28,3 +28,6 @@ permalink: /:categories/:title/
 
 gems:
   - jekyll-feed
+  - amp-jekyll
+
+ampdir: amp
