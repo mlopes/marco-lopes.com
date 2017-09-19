@@ -63,7 +63,12 @@ DzenConfigm but, you'll notice that we're calling it with only the 2 Int paramet
 Because in Haskell all functions are
 [curried](https://en.wikipedia.org/wiki/Currying)  by default, when we do
 this, we actually get back a function with the signature `ScreenId ->
-DzenConfig`. Now, if you look at the signature of `onCurr`:
+DzenConfig`. The reason why we get something of this type back, is because
+we've applied the two Int parameters to the function, so we get back a
+function that requires only the two last ones, and will always use `800` and
+`30` as the two first parameters.
+
+Now, if you look at the signature of `onCurr`:
 
 ```haskell
 onCurr :: (ScreenId -> DzenConfig) -> DzenConfig
