@@ -17,6 +17,8 @@ This article describes a list of resources I've used to find my way into Scala d
 ## A Little Background
 I've been a developer for a very long time, and I have quite a lot of experience. I've done some perl, years ago where I got familiarised with mapping, filtering and reducing, but, even though I've been interested in functional programming for a long time, I've never really had the time or will to really dive into it.
 
+This being said, lets get into the details about the resources and how they worked for me.
+
 ## Functional Programming Principles in Scala<span class="reference">[[1](https://www.coursera.org/learn/progfun1 "Functional Programming Principles in Scala")] </span>
 Given the background described above, it comes as no surprise that I started my Scala experience by attending the online course Functional Programming in Scala, delivered by Martin Odersky on Coursera.
 
