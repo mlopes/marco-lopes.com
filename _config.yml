@@ -13,6 +13,7 @@ exclude: ["Gemfile*", "README.*", "Rakefile"]
 disqus: ruk
 
 # Header settings
+author: "Marco Lopes"
 social:
     github: "mlopes"
     twitter: "mpmlopes"
@@ -24,3 +25,6 @@ google:
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title/
+
+gems:
+  - jekyll-feed
