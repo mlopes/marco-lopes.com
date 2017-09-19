@@ -2,7 +2,7 @@
 title: "Repeat Until Keypressed"
 bye_message: "λ"
 baseurl: "/"
-url: "https://marco-lopes.com"
+url: "http://marco-lopes.com"
 
 include: [ _pages ]
 pagesdir: _pages
