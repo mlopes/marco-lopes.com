@@ -2,6 +2,8 @@
 layout: page
 ---
 
+{% capture read_time %}{{page.content|number_of_words|divided_by:180}}{% endcapture %}
+
 <div class="post">
 
   <header class="post-header">
@@ -11,6 +13,8 @@ layout: page
         {% if page.meta %} • {{ page.meta }}{% endif %}
         •
         {% for tag in page.tags %}<span><a href="{{ site.baseurl }}tags/#{{ tag }}" class="reserved">{{ tag }}</a>{% if forloop.last != true %},{% endif %}</span>{% endfor %}
+        •
+        <span class="read-time">({% if read_time != '0' %} {{ read_time }} {% else %} less than 1 {% endif %} min read )</span>
     </p>
   </header>
 
@@ -18,9 +22,9 @@ layout: page
   {{ content }}
   </article>
 
-	<p class="feed-recomendation">
-		If you'd like to get updates when new posts come up, please subscribe to the <a href="{{ site.baseurl }}feed.xml">feed</a>.
-	</p>
+  <p class="feed-recomendation">
+      If you'd like to get updates when new posts come up, please subscribe to the <a href="{{ site.baseurl }}feed.xml">feed</a>.
+  </p>
 
   {% include disqus.html %}
 
