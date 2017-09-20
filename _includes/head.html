@@ -5,7 +5,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <link rel="amphtml" href="{{ page.id | prepend: 'amp' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="amphtml" href="{{ page.id | prepend: 'amp' | prepend: site.baseurl | prepend: site.url }}.html">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{{ site.baseurl }}css/bootstrap-3.3.6/css/bootstrap.min.css">

@@ -8,6 +8,8 @@ layout: amp
     <title>{{ page.title }}</title>
     <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async custom-element="amp-analytics"
+    src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <style amp-custom>
 .highlight .gs,p code{font-weight:700}.menu ul li a,a,div.logo a{text-decoration:none}.menu ul li {display: inline;}header p,main{text-align:left}body,table{text-align:center}.highlight pre{display:inline-block;background-color:#272822}.highlight pre code{border:0}p code,pre{border:1px dashed #C3A5B3}.highlight .hll{background-color:#22282a}.highlight .c{color:#99aa8a}.highlight .err{color:#960050;background-color:#1e0010}p code,pre.highlight{background-color:#272822}.highlight .k{color:#93c763}.highlight .l{color:#ae81ff}.highlight .n{color:#f1f2f3}.highlight .o{color:#e8e2b7}.highlight .p{color:#f1f2f3}.highlight .c1,.highlight .ch,.highlight .cm,.highlight .cp,.highlight .cpf,.highlight .cs{color:#99aa8a}.highlight .gd{color:#e8e2b7}.highlight .ge{font-style:italic}.highlight .gi{color:#678cb1}.highlight .gu{color:#99aa8a}.highlight .kc,.highlight .kd{color:#93c763}.highlight .kn{color:#e8e2b7}.highlight .kp,.highlight .kr{color:#93c763}.highlight .kt{color:#83d8e1}.highlight .ld{color:#ec7600}.highlight .m{color:#ffcd22}.highlight .s{color:#ec7600}.highlight .na{color:#678cb1}.highlight .nb{color:#f1f2f3}.highlight .nc{color:#678cb1}.highlight .no{color:#93c763}.highlight .nd{color:#678cb1}.highlight .ni{color:#f1f2f3}.highlight .ne,.highlight .nf{color:#678cb1}.highlight .nl,.highlight .nn{color:#f1f2f3}.highlight .nx{color:#678cb1}.highlight .py{color:#f1f2f3}.highlight .nt{color:#e8e2b7}.highlight .nv{color:#f1f2f3}.highlight .ow{color:#e8e2b7}.highlight .w{color:#f1f2f3}.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{color:#ffcd22}.highlight .s2,.highlight .sb,.highlight .sc,.highlight .sd{color:#ec7600}.highlight .se{color:#ae81ff}.highlight .s1,.highlight .sh,.highlight .si,.highlight .sr,.highlight .ss,.highlight .sx{color:#ec7600}.highlight .bp,.highlight .vc,.highlight .vg,.highlight .vi{color:#f1f2f3}.highlight .il{color:#ffcd22}pre.highlight{white-space:nowrap;word-wrap:normal;overflow:auto;overflow-x:auto}body,pre{background-color:#1B1A16}pre.highlight code{white-space:pre}p code{color:#ec7600;padding:1px 2px}body{border-top:1px dashed #C3A5B3;margin:0 auto;padding:0;font-family:monospace,sans-serif;line-height:unset;color:#C3A5B3;font-size:14px}@media screen and (min-width:500px){body{font-size:calc(14px + 2 * ((100vw - 500px)/ 1500))}}div.logo,h1{font-size:1.8em;color:#FF8939;font-weight:700}div.logo a,div.logo a:hover{color:#FF8939}h2{color:#FF8939;font-weight:700;font-size:1.75em}h2 span.reference{font-size:.5em;vertical-align:super;color:#663096}h2 span.reference a{color:#aa8cc5}a,header{color:#FFA264}h3,h4,h5,h6{color:#FF8939;font-weight:700}footer{color:#FF6700;font-weight:700;border-top:dashed 1px #C3A5B3;margin:20px auto 15px;padding-top:10px}.feed-recomendation,.menu{border-top:1px dashed #C3A5B3;border-bottom:1px dashed #C3A5B3}header{margin-top:25px;margin-bottom:10px}header p{margin:0;color:#C3A5B3}.menu ul li a,a:hover{color:#FF6700}.menu{margin-bottom:10px}.menu ul{margin-top:12px;margin-bottom:12px;padding-leftnt:' $ > ';font-size:.7em}.talk-date{color:#C65000;font-size:.8em}.talk-event{color:#FF6700;font-size:.8em}.feed-recomendation{font-size:.7em;margin-top:2em;padding-top:2em;padding-bottom:2em}.read-time{font-size:.7em;color:#663096}div.header-code{font-size:0.5em;}
     </style>
@@ -25,5 +27,20 @@ layout: amp
 {{ content | markdownify | amp_images }}
 {% capture footer %}{% include footer.html %}{% endcapture %}
 {{ footer | amp_images: false, 24, 24 }}
+<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "{{ site.google.analytics }}"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
 </body>
 </html>
