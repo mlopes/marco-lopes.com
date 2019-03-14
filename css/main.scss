@@ -13,7 +13,7 @@ body{
    font-family: $font_0, sans-serif;
    line-height: unset !important;
    color: $color-primary-5;
-   text-align: center;
+   text-align: left;
    font-size: 14px;
 }
 
@@ -172,7 +172,7 @@ audio{
 table{
    width: 100%;
    border-collapse: collapse;
-   text-align: center;
+   text-align: left;
    a {
        color: $color-primary-5;
    }
