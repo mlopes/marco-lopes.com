@@ -9,7 +9,7 @@ tags:
     - haskell
     - learning
     - functional
-    - ft-tutorial-series
+    - fp tutorial
 ---
 
 Previous in this series: [What is FP?](/articles/What-is-FP/)
