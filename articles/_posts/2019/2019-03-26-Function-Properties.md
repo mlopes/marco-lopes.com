@@ -139,7 +139,7 @@ map/filter operation).
 
 # Wrap Up
 
-Next time, we'll talk about 
-
+Next time, we'll take a bit of a side step and look at function currying and
+function partial application, before taking the next step deeper into FP.
 
 [^1]: It's worth to note here that the properties of a function being _partial_ is completely unrelated to the idea of _function partial application_. When looking for resources on either, make sure not to confuse them.
