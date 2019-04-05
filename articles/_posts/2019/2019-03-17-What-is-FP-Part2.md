@@ -9,7 +9,7 @@ tags:
     - haskell
     - learning
     - functional
-    - ft-tutorial-series
+    - fp tutorial
 ---
 
 Previous in this series: [What is FP?](/articles/What-is-FP/)
@@ -218,3 +218,5 @@ addressed in a later installement.
 
 Next time, we'll talk about some properties of functions, which are very
 closely related to the concepts we've talked about here.
+
+Next in this series: [Function Properties](/articles/Function-Properties/)
