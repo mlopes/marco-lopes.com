@@ -3,7 +3,7 @@ sitemap:
     exclude: 'yes'
 ---
 @import'vars';
-@import'son-of-obsidian';
+@import'base16-dark';
 
 body{
    border-top: 1px dashed $color-primary-5;
@@ -130,7 +130,7 @@ main{
 }
 pre{
    background-color: $color-background;
-   border: 1px dashed $color-primary-5;
+   border: 1px dashed $color-primary-4;
    padding: 8px;
    -webkit-border-radius: 3px;
    -moz-border-radius: 3px;
@@ -205,6 +205,10 @@ div.header-code{
     a {
         color: $color-primary-5;
     }
+}
+
+article.post-content {
+  line-height: 1.5em;
 }
 
 blockquote{
