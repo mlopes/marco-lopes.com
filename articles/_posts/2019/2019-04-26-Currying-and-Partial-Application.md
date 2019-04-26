@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Currying and Partial Application
-date: 2019-04-16 12:36
+date: 2019-04-26 12:36
 comments: true
 published: true
 tags:
@@ -110,7 +110,8 @@ add2InF [1,2,3]
 
 Which returns `[3,4,5]`
 
-Next in this series, something something something
+Next in this series, we're going to take a look at the basics of what is an
+effect system, and what benefits it can bring us.
 
 [^1]: The `$` is a precedence operator and it's there to tell the compiler to
   evaluate the `Just 5` before trying to apply `add2InF`. If it wouldn't be
