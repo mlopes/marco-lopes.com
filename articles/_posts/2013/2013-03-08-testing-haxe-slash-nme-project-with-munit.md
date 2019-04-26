@@ -120,5 +120,5 @@ We can add these to one of our shell configuration files so they're available at
 
 ## Mocks and Matchers ##
 
-Unfortunately, due to poor documentation, I'm not completely sure if there's any mock support directly on `munit`, but from what I could see, it seems there's not. I found a few mock libraries, but couldn't yet decide wich one should I use, and how compatible they are with `munit`.
+Unfortunately, due to poor documentation, I'm not completely sure if there's any mock support directly on `munit`, but from what I could see, it seems there's not. I found a few mock libraries, but couldn't yet decide which one should I use, and how compatible they are with `munit`.
 A similar situation happens with matchers, `munit` uses a `hamcrest` port for haxe, but I couldn't find any documentation on how to access these matchers or which ones does this port implement. Hopefully with time, as I write tests I'll find more about both mocks and matchers, at which time, I'll surely add a new post about it.
