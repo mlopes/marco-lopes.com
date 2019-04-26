@@ -110,6 +110,19 @@ add2InF [1,2,3]
 
 Which returns `[3,4,5]`
 
+In Scala, currying and partial application are often used when a function
+require parameters that are configuration/dependencies and parameters that are
+the values it will act upon. That way, we can partially apply the
+configuration/common dependencies, and get back a function that takes only the
+values. For example:
+
+```scala
+def transform[A, B](parser: Parser[A])(value: A): B = ???
+```
+By passing a parser to `transform`, we get back a function that takes a value
+of `A` and returns a value of `B`, which we can use with any `A`, without
+having to repeatedly pass the parser around.
+
 Next in this series, we're going to take a look at the basics of what is an
 effect system, and what benefits it can bring us.
 
