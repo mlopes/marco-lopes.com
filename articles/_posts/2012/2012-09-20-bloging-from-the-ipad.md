@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bloging from the iPad"
+title: "Blogging from the iPad"
 date: 2012-09-20 12:05
 comments: true
 published: false

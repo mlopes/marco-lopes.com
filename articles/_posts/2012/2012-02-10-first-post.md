@@ -33,7 +33,7 @@ I think this is a Linux, or maybe Debian specific issue, which probably is the
 reason for it not to be mentioned on the Octopress docs. Installing ruby 1.8.7, 
 upgrading rubygems with it and then going back to ruby 1.9.2, fixed the issue.
 
-After that I had no more problems, all the remaining setup went smothly.
+After that I had no more problems, all the remaining setup went smoothly.
 
 Since, although I had heard about Octopress before, I decided to give it a try 
 after reading the "[Uses Of Git](http://devsundar.github.com/2012/02/09/Uses-of-git/)"
