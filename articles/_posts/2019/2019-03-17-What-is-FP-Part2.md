@@ -12,7 +12,7 @@ tags:
     - fp tutorial
 ---
 
-Previous in this series: [What is FP?](/articles/What-is-FP/)
+<span class="prev">[← Previous in this series: What is FP?](/articles/What-is-FP/)</span>
 
 In the previous chapter, we've established the very basics of what is FP, and
 tried to dig a bit deeper in what "programming with functions" means.
@@ -219,4 +219,4 @@ addressed in a later installment.
 Next time, we'll talk about some properties of functions, which are very
 closely related to the concepts we've talked about here.
 
-Next in this series: [Function Properties](/articles/Function-Properties/)
+<span class="next">[Next in this series: Function Properties →](/articles/Function-Properties/)</span>

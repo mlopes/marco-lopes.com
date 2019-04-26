@@ -12,7 +12,7 @@ tags:
     - fp tutorial
 ---
 
-Previous in this series: [What is FP? - Part 2](/articles/What-is-FP-Part2/)
+<span class="prev">[← Previous in this series: What is FP? - Part 2](/articles/What-is-FP-Part2/)</span>
 
 In the previous chapter, we've gone into the differences between expressions
 and statements and different definitions of functions.
@@ -141,5 +141,7 @@ map/filter operation).
 
 Next time, we'll take a bit of a side step and look at function currying and
 function partial application, before taking the next step deeper into FP.
+
+<span class="next">[Next in this series: Currying and Partial Application →](/articles/Currying-and-Partial-Application/)</span>
 
 [^1]: It's worth to note here that the properties of a function being _partial_ is completely unrelated to the idea of _function partial application_. When looking for resources on either, make sure not to confuse them.

@@ -12,7 +12,7 @@ tags:
     - fp tutorial
 ---
 
-Previous in this series: [Function Properties](/articles/Function-Properties/)
+<span class="prev">[← Previous in this series: Function Properties](/articles/Function-Properties/)</span>
 
 In the previous installments we've mentioned currying and partial application.
 Let's try to give some clarity as to what those two things mean.

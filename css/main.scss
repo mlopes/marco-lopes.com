@@ -207,10 +207,24 @@ div.header-code{
     }
 }
 
+span.prev {
+  display: block;
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+span.next {
+  display: block;
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  text-align: right;
+}
+
 div.footnotes {
   background-color: #1A0905;
   font-size: 0.7em;
-  padding-top: 1em;
   border: 1px dashed $color-primary-4;
   padding: 8px;
   -webkit-border-radius: 3px;
