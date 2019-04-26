@@ -13,14 +13,16 @@ $color_seagull_approx: #83d8e1;
 $color_mango_tango_approx: #ec7600;
 $color_lightning_yellow_approx: #ffcd22;
 
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
 .highlight {
-    pre {
-		display: inline-block;
-		code {
-			border: 0px;
-		}
-        background-color: $color_log_cabin_approx;
-    }
+//    pre {
+//		display: inline-block;
+//		code {
+//			border: 0px;
+//		}
+//        background-color: $color_log_cabin_approx;
+//    }
     .hll {
         background-color: $color_shark_approx;
     }
@@ -219,22 +221,22 @@ $color_lightning_yellow_approx: #ffcd22;
     }
 }
 pre.highlight {
-    background-color: $color_log_cabin_approx;
-    white-space: nowrap;
-    word-wrap: normal;
+  background-color: $color_log_cabin_approx;
+  white-space: nowrap;
+  word-wrap: normal;
 	overflow: auto;
 	overflow-x: auto;
 	code {
-        white-space: pre;
-    }
+    white-space: pre;
+  }
 }
 
 p {
 	code {
-		border: 1px dashed $color-primary-5;
+		//border: 1px dashed $color-primary-5;
    		background-color: $color_log_cabin_approx;
    	 	color: $color_mango_tango_approx;
-    	font-weight: bold;
+   // 	font-weight: bold;
     	padding: 1px 2px;
 	}
 }
