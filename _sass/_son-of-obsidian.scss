@@ -13,231 +13,229 @@ $color_seagull_approx: #83d8e1;
 $color_mango_tango_approx: #ec7600;
 $color_lightning_yellow_approx: #ffcd22;
 
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
 .highlight {
-//    pre {
-//		display: inline-block;
-//		code {
-//			border: 0px;
-//		}
-//        background-color: $color_log_cabin_approx;
-//    }
-    .hll {
-        background-color: $color_shark_approx;
-    }
-    .c {
-        color: $color_sage_approx;
-    }
-    .err {
-        color: $color_cardinal_pink_approx;
-        background-color: $color_asphalt_approx;
-    }
-    .k {
-        color: $color_olivine_approx;
-    }
-    .l {
-        color: $color_dull_lavender_approx;
-    }
-    .n {
-        color: $color_concrete_approx;
-    }
-    .o {
-        color: $color_raffia_approx;
-    }
-    .p {
-        color: $color_concrete_approx;
-    }
-    .ch {
-        color: $color_sage_approx;
-    }
-    .cm {
-        color: $color_sage_approx;
-    }
-    .cp {
-        color: $color_sage_approx;
-    }
-    .cpf {
-        color: $color_sage_approx;
-    }
-    .c1 {
-        color: $color_sage_approx;
-    }
-    .cs {
-        color: $color_sage_approx;
-    }
-    .gd {
-        color: $color_raffia_approx;
-    }
-    .ge {
-        font-style: italic;
-    }
-    .gi {
-        color: $color_bermuda_gray_approx;
-    }
-    .gs {
-        font-weight: bold;
-    }
-    .gu {
-        color: $color_sage_approx;
-    }
-    .kc {
-        color: $color_olivine_approx;
-    }
-    .kd {
-        color: $color_olivine_approx;
-    }
-    .kn {
-        color: $color_raffia_approx;
-    }
-    .kp {
-        color: $color_olivine_approx;
-    }
-    .kr {
-        color: $color_olivine_approx;
-    }
-    .kt {
-        color: $color_seagull_approx;
-    }
-    .ld {
-        color: $color_mango_tango_approx;
-    }
-    .m {
-        color: $color_lightning_yellow_approx;
-    }
-    .s {
-        color: $color_mango_tango_approx;
-    }
-    .na {
-        color: $color_bermuda_gray_approx;
-    }
-    .nb {
-        color: $color_concrete_approx;
-    }
-    .nc {
-        color: $color_bermuda_gray_approx;
-    }
-    .no {
-        color: $color_olivine_approx;
-    }
-    .nd {
-        color: $color_bermuda_gray_approx;
-    }
-    .ni {
-        color: $color_concrete_approx;
-    }
-    .ne {
-        color: $color_bermuda_gray_approx;
-    }
-    .nf {
-        color: $color_bermuda_gray_approx;
-    }
-    .nl {
-        color: $color_concrete_approx;
-    }
-    .nn {
-        color: $color_concrete_approx;
-    }
-    .nx {
-        color: $color_bermuda_gray_approx;
-    }
-    .py {
-        color: $color_concrete_approx;
-    }
-    .nt {
-        color: $color_raffia_approx;
-    }
-    .nv {
-        color: $color_concrete_approx;
-    }
-    .ow {
-        color: $color_raffia_approx;
-    }
-    .w {
-        color: $color_concrete_approx;
-    }
-    .mb {
-        color: $color_lightning_yellow_approx;
-    }
-    .mf {
-        color: $color_lightning_yellow_approx;
-    }
-    .mh {
-        color: $color_lightning_yellow_approx;
-    }
-    .mi {
-        color: $color_lightning_yellow_approx;
-    }
-    .mo {
-        color: $color_lightning_yellow_approx;
-    }
-    .sb {
-        color: $color_mango_tango_approx;
-    }
-    .sc {
-        color: $color_mango_tango_approx;
-    }
-    .sd {
-        color: $color_mango_tango_approx;
-    }
-    .s2 {
-        color: $color_mango_tango_approx;
-    }
-    .se {
-        color: $color_dull_lavender_approx;
-    }
-    .sh {
-        color: $color_mango_tango_approx;
-    }
-    .si {
-        color: $color_mango_tango_approx;
-    }
-    .sx {
-        color: $color_mango_tango_approx;
-    }
-    .sr {
-        color: $color_mango_tango_approx;
-    }
-    .s1 {
-        color: $color_mango_tango_approx;
-    }
-    .ss {
-        color: $color_mango_tango_approx;
-    }
-    .bp {
-        color: $color_concrete_approx;
-    }
-    .vc {
-        color: $color_concrete_approx;
-    }
-    .vg {
-        color: $color_concrete_approx;
-    }
-    .vi {
-        color: $color_concrete_approx;
-    }
-    .il {
-        color: $color_lightning_yellow_approx;
-    }
+  pre {
+    display: inline-block;
+    code {
+      border: 0px;
+    }
+    background-color: $color_log_cabin_approx;
+  }
+  .hll {
+    background-color: $color_shark_approx;
+  }
+  .c {
+    color: $color_sage_approx;
+  }
+  .err {
+    color: $color_cardinal_pink_approx;
+    background-color: $color_asphalt_approx;
+  }
+  .k {
+    color: $color_olivine_approx;
+  }
+  .l {
+    color: $color_dull_lavender_approx;
+  }
+  .n {
+    color: $color_concrete_approx;
+  }
+  .o {
+    color: $color_raffia_approx;
+  }
+  .p {
+    color: $color_concrete_approx;
+  }
+  .ch {
+    color: $color_sage_approx;
+  }
+  .cm {
+    color: $color_sage_approx;
+  }
+  .cp {
+    color: $color_sage_approx;
+  }
+  .cpf {
+    color: $color_sage_approx;
+  }
+  .c1 {
+    color: $color_sage_approx;
+  }
+  .cs {
+    color: $color_sage_approx;
+  }
+  .gd {
+    color: $color_raffia_approx;
+  }
+  .ge {
+    font-style: italic;
+  }
+  .gi {
+    color: $color_bermuda_gray_approx;
+  }
+  .gs {
+    font-weight: bold;
+  }
+  .gu {
+    color: $color_sage_approx;
+  }
+  .kc {
+    color: $color_olivine_approx;
+  }
+  .kd {
+    color: $color_olivine_approx;
+  }
+  .kn {
+    color: $color_raffia_approx;
+  }
+  .kp {
+    color: $color_olivine_approx;
+  }
+  .kr {
+    color: $color_olivine_approx;
+  }
+  .kt {
+    color: $color_seagull_approx;
+  }
+  .ld {
+    color: $color_mango_tango_approx;
+  }
+  .m {
+    color: $color_lightning_yellow_approx;
+  }
+  .s {
+    color: $color_mango_tango_approx;
+  }
+  .na {
+    color: $color_bermuda_gray_approx;
+  }
+  .nb {
+    color: $color_concrete_approx;
+  }
+  .nc {
+    color: $color_bermuda_gray_approx;
+  }
+  .no {
+    color: $color_olivine_approx;
+  }
+  .nd {
+    color: $color_bermuda_gray_approx;
+  }
+  .ni {
+    color: $color_concrete_approx;
+  }
+  .ne {
+    color: $color_bermuda_gray_approx;
+  }
+  .nf {
+    color: $color_bermuda_gray_approx;
+  }
+  .nl {
+    color: $color_concrete_approx;
+  }
+  .nn {
+    color: $color_concrete_approx;
+  }
+  .nx {
+    color: $color_bermuda_gray_approx;
+  }
+  .py {
+    color: $color_concrete_approx;
+  }
+  .nt {
+    color: $color_raffia_approx;
+  }
+  .nv {
+    color: $color_concrete_approx;
+  }
+  .ow {
+    color: $color_raffia_approx;
+  }
+  .w {
+    color: $color_concrete_approx;
+  }
+  .mb {
+    color: $color_lightning_yellow_approx;
+  }
+  .mf {
+    color: $color_lightning_yellow_approx;
+  }
+  .mh {
+    color: $color_lightning_yellow_approx;
+  }
+  .mi {
+    color: $color_lightning_yellow_approx;
+  }
+  .mo {
+    color: $color_lightning_yellow_approx;
+  }
+  .sb {
+    color: $color_mango_tango_approx;
+  }
+  .sc {
+    color: $color_mango_tango_approx;
+  }
+  .sd {
+    color: $color_mango_tango_approx;
+  }
+  .s2 {
+    color: $color_mango_tango_approx;
+  }
+  .se {
+    color: $color_dull_lavender_approx;
+  }
+  .sh {
+    color: $color_mango_tango_approx;
+  }
+  .si {
+    color: $color_mango_tango_approx;
+  }
+  .sx {
+    color: $color_mango_tango_approx;
+  }
+  .sr {
+    color: $color_mango_tango_approx;
+  }
+  .s1 {
+    color: $color_mango_tango_approx;
+  }
+  .ss {
+    color: $color_mango_tango_approx;
+  }
+  .bp {
+    color: $color_concrete_approx;
+  }
+  .vc {
+    color: $color_concrete_approx;
+  }
+  .vg {
+    color: $color_concrete_approx;
+  }
+  .vi {
+    color: $color_concrete_approx;
+  }
+  .il {
+    color: $color_lightning_yellow_approx;
+  }
 }
 pre.highlight {
   background-color: $color_log_cabin_approx;
   white-space: nowrap;
   word-wrap: normal;
-	overflow: auto;
-	overflow-x: auto;
-	code {
-    white-space: pre;
+  overflow: auto;
+  overflow-x: auto;
+  code {
+  white-space: pre;
   }
 }
 
 p {
-	code {
-		//border: 1px dashed $color-primary-5;
-   		background-color: $color_log_cabin_approx;
-   	 	color: $color_mango_tango_approx;
-   // 	font-weight: bold;
-    	padding: 1px 2px;
-	}
+  code {
+    border: 1px ed $color-primary-5;
+    background-color: $color_log_cabin_approx;
+    color: $color_mango_tango_approx;
+    font-weight: bold;
+    padding: 1px 2px;
+  }
 }
 
