@@ -24,7 +24,7 @@ function properties mean.
 
 In functional programming, abstractions tend to be very generic and talk about
 properties of things, but the abstractions themselves tend to be very
-specific, in the sense that they usally follow well defined laws and the
+specific, in the sense that they usually follow well defined laws and the
 properties it abstract over are very well defined.
 
 The function abstraction is not conceptually different in FP than it is in
@@ -48,25 +48,25 @@ exclusively on its input values. This correlates closely to our description of
 expressions in the previous chapter, although it doesn't necessarily mean that
 there are no statements inside of the function, as long as those statements
 act only in at a local scope, as for example a local auxiliary assignment
-statemnt to set a local variable, or a conditional statement (might be worth
+statement to set a local variable, or a conditional statement (might be worth
 noting here that both in Scala and Haskell `if/else` is an expression, not a
 statement like in most other languages). 
 
 By opposition, an _effectul_ function is one that causes an observable change in
 the world or depends on the state of the world. This mean that functions that
-do printing, writing to a file, writing to a database, publishing to kafka,
+do printing, writing to a file, writing to a database, publishing to Kafka,
 read from a console, query a database, read from a file, get the current date,
-etc... are all _effectul_. Now remeber how in the last chapter I said that
+etc... are all _effectul_. Now remember how in the last chapter I said that
 `println` was a statement? I was a bit creative with the truth in there. In
 some languages `print(ln)` is a statement, in some others it's an effecful
 function that returns a `void` type (not always named `void` depending on the
-language), which is an uninhabited type, meanign there are no values of type
+language), which is an uninhabited type, meaning there are no values of type
 `void`, and so the function returns nothing.
 In Python, for example, `print` is a _statement_, in version 2, and became a
 function in version 3:
 
 ```python
-$ pyhton2
+$ python2
 
 >>> a = print "hello"
   File "<stdin>", line 1
@@ -89,7 +89,7 @@ But in Scala `println` doesn't implement any of the previous behaviours. So,
 what does it do then? In Scala, `println` is a function, but it doesn't return
 a `void` type, instead it returns a value of type `Unit`. `Unit`, is a type
 that is inhabited by a single value, `()` in Scala. Returning `Unit`, is usually
-a pretty good hint that this functions is being exectuted purelly for the effects
+a pretty good hint that this functions is being executed purely for the effects
 that it performs and we don't care about the result. This difference between a
 `void` and `Unit` type is important because by being able to construct a value
 of type `Unit`, which you can't for type `void` (because there are no values
@@ -126,11 +126,11 @@ def div(x: Float, y: Float): Float = x / y
 
 If you pass `0` as the `y` parameter it will throw a
 `java.lang.ArithmeticException: / by zero`, meaning it doesn't return a
-`Float` value, as expected. This also means that this function perfomed an
+`Float` value, as expected. This also means that this function performed an
 effect (throwing an exception). The `div` function is _partial_ because it
 doesn't have a return value for any input combination where `y` is `0`.
 
-Knowing about this propery is useful, because it means you can rely on a
+Knowing about this property is useful, because it means you can rely on a
 function being _total_ to always return a result, or that you can use a
 _partial_ function, for example, to filter values out (see for example, the
 Scala function `collect` which uses a partial function to do a combined

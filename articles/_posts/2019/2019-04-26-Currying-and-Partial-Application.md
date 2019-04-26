@@ -14,7 +14,7 @@ tags:
 
 Previous in this series: [Function Properties](/articles/Function-Properties/)
 
-In the previous installements we've mentioned currying and partial application.
+In the previous installments we've mentioned currying and partial application.
 Let's try to give some clarity as to what those two things mean.
 
 # Currying
@@ -31,22 +31,22 @@ and returns a function that takes `z` and returns `r`, like
 `def f(x: Int): (y: Int => (z: Int => r))`.
 What we did here, was we broke down our 3 parameter function into 3 functions that
 take 1 parameter each.
-The possibility of treating functions like this was developed and prooved by
+The possibility of treating functions like this was developed and proved by
 mathematicians, amongst them Haskell Curry, after whom the technique was later
 named, as well as _Haskell_ the language.
 
 ## Uses of currying
 
-In _Haskell_, all functions are curryied by default. This means that if you declare
+In _Haskell_, all functions are curried by default. This means that if you declare
 a function with more than one parameter, behind the scenes that functions just takes
 one parameter and returns another function that takes one parameter and so on.
 In _Scala_, functions are not inherently pure, so you have to manually curry a function,
 because if a function performs an effect the interpreter won't know if it can partially
 apply it without breaking it's procedural order, for example, in the case of a function
 that requests input from the user, that action doesn't depend on the function inputs, but
-subsequent instructions on that function might. So, if you want a function to be curryied,
+subsequent instructions on that function might. So, if you want a function to be curried,
 you have to explicitly say so and take responsibility to not break it. The example above
-would become `def f(x:Int)(y: Int)(z: Int): String`, meaning that the function is now curryied.
+would become `def f(x:Int)(y: Int)(z: Int): String`, meaning that the function is now curried.
 
 But why would we want to curry a function?
 That takes us to the next section. Partial application.
@@ -116,5 +116,5 @@ effect system, and what benefits it can bring us.
 [^1]: The `$` is a precedence operator and it's there to tell the compiler to
   evaluate the `Just 5` before trying to apply `add2InF`. If it wouldn't be
   there, then it would try to apply `add2InF` to `Just` and then pass `5` as a
-  parameter to the result. This would not typecheck and thefore wouldn't
+  parameter to the result. This would not type-check and therefore wouldn't
   compile.

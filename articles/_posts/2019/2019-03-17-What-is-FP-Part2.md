@@ -33,7 +33,7 @@ basically means it's a (somewhat) closed code block containing sequences of
 language instructions. These _functions_ can take parameters and can return
 values, which might be solely based on the input parameters or not.
 An example of this, using Scala, could be (please ignore all the horrible ways
-this code could go wrong, the deprecation, and all the unecessary steps that exist
+this code could go wrong, the deprecation, and all the unnecessary steps that exist
 here for the sake of simplicity and example):
 
 ```scala
@@ -50,7 +50,7 @@ and then print it to STDOUT.
 
 ## Functions in maths
 
-Because the objective here is to learn about FP, not maths, I'm goint to try
+Because the objective here is to learn about FP, not maths, I'm going to try
 to focus on how they differ from the concept of _function_ that developers are
 more familiar with, rather than anything else.
 In maths, functions are mapping from a set o values to another set of values.
@@ -72,7 +72,7 @@ then you can reduce it, which will give you a value, `5`.
 In our first example, we see that we have a sequence of instructions, while on
 our second example we have only a single expression. We also see that
 for `println`, we don't even care about its return value, and furthermore for
-`readLine` we don't depend on the input parameters but rather on runtime user input.
+`readLine` we don't depend on the input parameters but rather on run-time user input.
 This means that there's a lot of things going on in our programming function that
 couldn't happen in the maths definition of functions, it being a mapping between sets
 of values.
@@ -88,7 +88,7 @@ value. In `println(s"$x plus $y is {$n.toString}")` we're giving an instruction
 to perform some output, we can't apply variable substitution, reduce it, and
 in languages that actually implement it as a statement get a value out of it
 (Scala does return a value and implements it as a function, but more on that 
-on a future installement).
+on a future installment).
 The former is an _expression_, the latter a _statement_.
 
 # Why is this distinction useful?
@@ -145,7 +145,7 @@ can eventually be reduced into other values. This means you can create more
 complex expressions by composing simpler ones (ex: `2 + (5 * x) - (2 / y +
 z)`).
 
-## Perfom outcomes
+## Perform outcomes
 
 This is where statements come into. If an expression allows you only to
 perform variable substitution and operation application, then you can only
@@ -174,9 +174,9 @@ return anything useful out of it), while functions fit better the model where
 we define expressions and map from the input parameter values to the output values.
 
 The lack of a first class construct to distinguish between those two different
-things, is a huge hinderance in making developers aware of this difference.
+things, is a huge hindrance in making developers aware of this difference.
 Languages like Haskell address this difference in a way that we'll look into
-in a future installement.
+in a future installment.
 
 As a side note, these procedure like functions with no return type, usually
 expressed through `void`, are usually handled through the type system in typed
@@ -208,11 +208,11 @@ modeling input and output sources as interfaces at the boundary of the system.
 
 In Haskell, this is addressed explicitly, and by default you can only 
 perform these actions inside of something called an effect system (Scala also
-has a few effect systems available via 3rd party libraries namelly cats.effect.IO and ZIO). 
+has a few effect systems available via 3rd party libraries namely cats.effect.IO and ZIO). 
 Effect systems are part of what makes functional programming so powerful.
 
 However, effect systems are outside of the scope of this chapter, and will be
-addressed in a later installement.
+addressed in a later installment.
 
 # Wrap Up
 
