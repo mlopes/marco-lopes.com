@@ -207,6 +207,19 @@ div.header-code{
     }
 }
 
+div.footnotes {
+  background-color: #1A0905;
+  font-size: 0.7em;
+  padding-top: 1em;
+  border: 1px dashed $color-primary-4;
+  padding: 8px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+  overflow: auto;
+}
+
 article.post-content {
   line-height: 1.5em;
 }

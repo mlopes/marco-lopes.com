@@ -113,8 +113,4 @@ Which returns `[3,4,5]`
 Next in this series, we're going to take a look at the basics of what is an
 effect system, and what benefits it can bring us.
 
-[^1]: The `$` is a precedence operator and it's there to tell the compiler to
-  evaluate the `Just 5` before trying to apply `add2InF`. If it wouldn't be
-  there, then it would try to apply `add2InF` to `Just` and then pass `5` as a
-  parameter to the result. This would not type-check and therefore wouldn't
-  compile.
+[^1]: The `$` is a precedence operator and it's there to tell the compiler to evaluate the `Just 5` before trying to apply `add2InF`. If it wouldn't be there, then it would try to apply `add2InF` to `Just` and then pass `5` as a parameter to the result. This would not type-check and therefore wouldn't compile.
