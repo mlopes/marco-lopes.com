@@ -59,7 +59,7 @@ then, we can always call the function with only that parameter back. This is
 called partial application. So, for example, if you have the following
 function:
 
-```Haskell
+```haskell
 f :: Int -> Int -> Int -> String
 f x y z = show (x + y + z)
 ```
@@ -77,7 +77,7 @@ method.
 So, the signature of `fmap` is `fmap :: Functor f => (a -> b) -> f a -> f b`, so, we can do the
 following:
 
-```Haskell
+```haskell
 add2 :: Integer -> Integer
 add2 x = x + 2
 
@@ -87,7 +87,7 @@ fmap add2 $ Some 3
 The result would be `Some 5`, because we're mapping the `add2` function over
 the `Some` value. Another thing we could do is partially apply `fmap`:
 
-```Haskell
+```haskell
 add2InF = fmap add2
 :t add2InF
 ```
@@ -96,7 +96,7 @@ Because `:t` shows the type of an expression, we will see that the type of
 our `add2` function so that it now can be applied to a value in the context of `f`
 We can now do:
 
-```Haskell
+```haskell
 add2InF $ Just 5
 ```
 
@@ -104,7 +104,7 @@ which results in `Just 7` [^1]
 
 or
 
-```Haskell
+```haskell
 add2InF [1,2,3]
 ```
 

@@ -5,6 +5,11 @@ sitemap:
 @import'vars';
 @import'base16-dark';
 
+@font-face {
+  font-family: 'Hasklig Regular';
+  src: url(/assets/fonts/Hasklig-Regular.otf) format('opentype');
+}
+
 body{
    border-top: 1px dashed $color-primary-5;
    background-color: $color_background;

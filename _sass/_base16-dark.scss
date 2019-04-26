@@ -15,6 +15,9 @@ $color_lightning_yellow_approx: #ffcd22;
 
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
+code {
+    font-family: 'Hasklig Regular';
+}
 .highlight, .highlight .w {
   color: #d0d0d0;
 }
@@ -96,5 +99,6 @@ p {
     background-color: $color-shark_approx;
     color: $color-primary-1;
     padding: 1px 2px;
+    font-family: 'Hasklig Regular';
   }
 }
