@@ -257,6 +257,13 @@ ul.cli-bullets{
    }
 }
 
+sup {
+  font-size: 0.6em;
+  margin-left: -0.5em;
+  background-color: $color-contrast-4;
+  vertical-align: super;
+}
+
 .talk-date{
    color: $color-primary-3;
    font-size: 0.8em;
