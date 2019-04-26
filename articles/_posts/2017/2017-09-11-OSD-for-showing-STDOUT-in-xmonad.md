@@ -12,7 +12,7 @@ tags:
 
 Recently I've been looking a bit into Haskell. This has proven specially
 useful since I've been using XMonad as my primary window manager for some time
-now. This newlly acquired understanding of Haskell allows me therefore to
+now. This newly acquired understanding of Haskell allows me therefore to
 go a step further in the configuration of my working environment.
 
 A few days ago, I've written some configuration to map a keybinding to an
@@ -83,7 +83,7 @@ Then, we compose the `DzenConfig` returned by that expression with the
 `DzenConfig` we get out of our call to `font`, and we get a composition of our
 desired configuration.
 
-Now that that's sorted, let's look at the second parameter. The second paramter,
+Now that that's sorted, let's look at the second parameter. The second parameter,
 is of type `String`. This is the string that will be displayed in the OSD.
 To get this string, we need to run our command and somehow capture its output.
 The way I was able to do this, was by using the `runProcessWithInput`
@@ -120,7 +120,7 @@ externalCommandInPopUp c p = do
 ```
 
 To use it, I bind a call to `externalCommandInPopUp` to a key combination, and
-specify there which command to run. So, for exemple to have `WinKey+Shift+m` showing
+specify there which command to run. So, for example to have `WinKey+Shift+m` showing
 me the song currently playing on `mpd` (music player daemon) using `mpc` (music player client),
 I do the following:
 

@@ -15,7 +15,7 @@ tags:
 This article describes a list of resources I've used to find my way into Scala development. For context of how relevant these resources might be to you, let me first give a quick description of my technical background.
 
 ## A Little Background
-I've been a developer for a very long time, and I have quite a lot of experience. I've done some perl, years ago where I got familiarised with mapping, filtering and reducing, but, even though I've been interested in functional programming for a long time, I've never really had the time or will to really dive into it.
+I've been a developer for a very long time, and I have quite a lot of experience. I've done some Perl, years ago where I got familiarised with mapping, filtering and reducing, but, even though I've been interested in functional programming for a long time, I've never really had the time or will to really dive into it.
 
 This being said, lets get into the details about the resources and how they worked for me.
 
@@ -49,7 +49,7 @@ I've never managed to finish this one. It's the exact opposite of Learn You a Ha
 This being said, a lot of people swear by it, so might still be worth it to take a look and see what you think.
 
 ## Exercism<span class="reference">[[5](http://exercism.io/languages/scala/about "Exercism.io")] </span>
-I didn't knew about exercism until very recently, but I'm surely glad I found out about it. Exercism has exercises in a variety of languages, including Scala. And even though I have to confess I've mostly focused on the Haskell ones, these are really helpful exercises that stray from the typical "make a function that calculates a Fibonacci sequence" cliché. The exercises are interesting and varied, users can look at each other's solutions and comment, and you can join or create teams.
+I didn't knew about exercism until very recently, but I'm surely glad I found out about it. Exercism has exercises in a variety of languages, including Scala. And even though I have to confess I've mostly focused on the Haskell ones, these are really helpful exercises that stray from the typical "make a function that calculates a Fibonacci sequence" cliche. The exercises are interesting and varied, users can look at each other's solutions and comment, and you can join or create teams.
 
 ## The Neophyte's Guide to Scala<span class="reference">[[6](http://danielwestheide.com/scala/neophytes.html "The Neophyte's Guide to Scala")] </span>
 This was introduced to me as a good starting point to learn Scala. It isn't. Don't get me wrong, this is one of the best resources to learn some Scala. It just isn't exactly for "starting". As it describes itself:
