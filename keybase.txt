@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mlopes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://marco-lopes.com
+  * I am mlopes (https://keybase.io/mlopes) on keybase.
+  * I have a public key ASBWeiKLf4WqwamRdXom3K4ItA6BEPGwkO7s0hWdlTvlugo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120567a228b7f85aac1a991757a26dcae08b40e8110f1b090eeecd2159d953be5ba0a",
+      "host": "keybase.io",
+      "kid": "0120567a228b7f85aac1a991757a26dcae08b40e8110f1b090eeecd2159d953be5ba0a",
+      "uid": "57b1cd14cb3fd7bbeade5b27bd5dbe00",
+      "username": "mlopes"
+    },
+    "merkle_root": {
+      "ctime": 1556197828,
+      "hash": "a1f7b131096de80337fb814c2d2e7ab994df2db9e92d8b365c9a7ee6955d497f13288846fb99acee1c1c14b7c4abbc4464c729409ce868f2a392e31d1ec5e7cd",
+      "hash_meta": "8a1802741e4b69d60105beeeabc4da4c7b73e6c9d52cc3ea8cc86c8f5b75d24c",
+      "seqno": 5239308
+    },
+    "service": {
+      "entropy": "CYml2+3/ahZOiMpxoA6kriNM",
+      "hostname": "marco-lopes.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.2.2"
+  },
+  "ctime": 1556197866,
+  "expire_in": 504576000,
+  "prev": "2d695c92c60fcc9fe20d1192325977ad4cd59c5bfc0e1298ff863dc84ffba3f6",
+  "seqno": 59,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgVnoii3+FqsGpkXV6JtyuCLQOgRDxsJDu7NIVnZU75boKp3BheWxvYWTESpcCO8QgLWlcksYPzJ/iDRGSMll3rUzVnFv8DhKY/4Y9yE/7o/bEIHW2jq97hekD0dIEiujcllwO+cZIEWiIl1G/7ibv0CtfAgHCo3NpZ8RAv/11cvC7hORqx4FTfQnsXlmkbZGhXpGUanx/eBOylWANxC3vnkky32iwr8XXo7oziS2sjLT+wM7EFbXkj1mcA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGe7OuOB7reCP5xWx5r4gaZIobBvo8ExR0bkbBun4O9ao3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mlopes
+
+==================================================================
