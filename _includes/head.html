@@ -43,5 +43,20 @@
     <meta name="twitter:image" content="{{ site.url }}{{ site.title_image }}">
     {% endif %}
     <!-- end of Twitter cards -->
+    <!-- linkedin meta tags -->
+    <meta property="og:title" content="{{ page.title }}"/>
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}"/>
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}{{ site.title_image }}"/>
+    {% endif %}
+    {% if page.summary %}
+    <meta property="og:description" content="{{ page.summary }}"/>
+    {% else %}
+    <meta property="og:description" content="{{ site.description }}"/>
+    {% endif %}
+    <meta property="og:url" content="{{ site.url }}{{ page.id }}" />
+    <!-- end of linkedin meta tags -->
+
 
 </head>
