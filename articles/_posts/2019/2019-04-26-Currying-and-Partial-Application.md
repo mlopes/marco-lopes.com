@@ -4,6 +4,7 @@ title: Currying and Partial Application
 date: 2019-04-26 12:36
 comments: true
 published: true
+summary: In this article we're going to explain what is currying and partial application, as well as how they differ.
 tags:
     - scala
     - haskell
