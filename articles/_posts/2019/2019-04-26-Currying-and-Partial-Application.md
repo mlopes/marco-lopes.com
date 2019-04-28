@@ -21,14 +21,16 @@ Let's try to give some clarity as to what those two things mean.
 
 Currying is a simple concept that is a bit hard to pass across, if you never
 came across it before. Let's say you have a function `f` that takes 3 `Int`
-values, `x`, `y`, and `z` and returns a value `r` of type `String`, so
-`def f(x: Int, y: Int, z: Int): String`. You can also think of it as a function
-that takes `x` and returns another function that takes `y` and `z`, and returns
-`r`, like `def f(x: Int): (y: Int, z: Int => r: String)`. In turn, you can do the
-same thing with the return function and make it into a function that takes `y`,
-and returns a function that takes `z` and returns `r`, like
-`y: Int => z: Int => r: String`. So, you end up with a function
-`def f(x: Int): (y: Int => (z: Int => r))`.
+values, `x`, `y`, and `z` and returns a value `r` of type `String`, in Scala 
+the signature would look something like this `def f(x: Int, y: Int, z: Int): String`.
+You can also think of it as a function that takes `x` and returns another function
+that takes `y` and `z`, and returns `r`, like `def f(x: Int): (Int, Int) => String`.
+In turn, you can do the same thing with the return function and make it into a
+function that takes `y`, and returns a function that takes `z` and returns `r`.
+So, you end up with a function `def f(x: Int): (Int => (Int => String))`, or,
+because `=>` associates to the right, we can lose the parentheses, and end up with
+`def f(x: Int): Int => Int => String`, using syntax sugar `def f(x:Int)(y: Int)(z: Int): String`.
+
 What we did here, was we broke down our 3 parameter function into 3 functions that
 take 1 parameter each.
 The possibility of treating functions like this was developed and proved by
