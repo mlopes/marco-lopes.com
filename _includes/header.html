@@ -16,10 +16,16 @@
         &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( <a href="https://twitter.com/{{site.social.twitter}}" target="_blank"><span class="string">"https://twitter.com/"</span> <span class="reserved">++</span> twitterUser </a>)
         </p>
         <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( <a href="https://linkedin.com/in/{{site.social.linkedin}}" target="_blank"><span class="string">"https://linkedin.com/in/"</span> <span class="reserved">++</span> linkedinUser </a>)
+        </p>
+        <p>
         &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">putStrLn</span> ( </span> <span class="string"><a href="{{ site.baseurl }}misc/pubkey.gpg.txt" target="_blank">"{{ site.social.fingerprint_key }}"</a></span> )
         </p>
         <p>
         &nbsp;&nbsp;&nbsp;&nbsp;<span class="reserved">where</span> twitterUser = <span class="string">"{{ site.social.twitter }}"</span>
+        </p>
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linkedinUser = <span class="string">"{{ site.social.linkedin }}"</span>
         </p>
         <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;githubUser = <span class="string">"{{ site.social.github }}"</span>
