@@ -126,6 +126,20 @@ By passing a parser to `transform`, we get back a function that takes a value
 of `A` and returns a value of `B`, which we can use with any `A`, without
 having to repeatedly pass the parser around.
 
+It's worth mentioning, that, as [pschwarz](https://disqus.com/by/pschwarz/)
+commented bellow, in Scala you can curry functions at run time, so an adapted
+version of his example (with some minor changes for ease of understanding to
+newcomers):
+
+```scala
+val add = { (x:Int , y: Int)  => x + y }
+
+val add3 = add.curried(3)
+
+val result = add3(5)
+// result: Int = 8
+```
+
 Next in this series, we're going to take a look at the basics of what is an
 effect system, and what benefits it can bring us.
 
