@@ -2,3 +2,6 @@
 _site
 *.swp
 Gemfile.lock
+.bundle
+.gems
+.DS_STORE

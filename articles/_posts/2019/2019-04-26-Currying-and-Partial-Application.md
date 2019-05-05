@@ -5,6 +5,7 @@ date: 2019-04-26 12:36
 comments: true
 published: true
 summary: In this article we're going to explain what is currying and partial application, as well as how they differ.
+image: /assets/posts/images/HaskellBCurry.jpg
 tags:
     - scala
     - haskell
@@ -37,6 +38,8 @@ take 1 parameter each.
 The possibility of treating functions like this was developed and proved by
 mathematicians, amongst them Haskell Curry, after whom the technique was later
 named, as well as _Haskell_ the language.
+
+![Haskell Curry](/assets/posts/images/HaskellBCurry.jpg){: .center-image }
 
 ## Uses of currying
 
@@ -140,7 +143,8 @@ val result = add3(5)
 // result: Int = 8
 ```
 
-Next in this series, we're going to take a look at the basics of what is an
-effect system, and what benefits it can bring us.
+Next in this series, we're going to take a look at type parameters, before
+diving into the basics of what is an effect system, and what benefits it can
+bring us.
 
 [^1]: The `$` is a precedence operator and it's there to tell the compiler to evaluate the `Just 5` before trying to apply `add2InF`. If it wouldn't be there, then it would try to apply `add2InF` to `Just` and then pass `5` as a parameter to the result. This would not type-check and therefore wouldn't compile.
