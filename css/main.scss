@@ -153,12 +153,18 @@ pre{
 }
 img{
    border: 1px dashed $color-primary-5;
-   padding: 8px;
-   -webkit-border-radius: 3px;
-   -moz-border-radius: 3px;
+   padding: 0px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-   border-radius: 3px;
+   border-radius: 10px;
 }
+
+.center-image {
+  margin: 0 auto;
+  display: block;
+}
+
 iframe{
    width: 750px;
    height: 400px;
