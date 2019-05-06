@@ -57,6 +57,7 @@ and ` Nothing` in this case. They are named data constructors because when
 called, they construct values of the type `Maybe`.
 
 On the left side, you have the type constructor. See, in the previous
+<<<<<<< HEAD
 paragraph I called `Maybe` a type, well, I lied. You can think of `Maybe` as a
 function, and of `a` as the parameter of the maybe function. In fact, in
 Haskell, `Maybe` **is** a function, and `a` **is** a parameter to that
@@ -65,6 +66,16 @@ evaluates into a result value, in this function, when you pass a type to it,
 it evaluates into a result type. So `Maybe a` is a type constructor, and when
 you pass a type to it, such as `Maybe Int`, it constructs a concrete type,
 which is similarly named `Maybe Int`.
+=======
+paragraph I called `Maybe` a type, well, I lied, `Maybe`, by itself is 
+not a type. You can think of `Maybe` as a function, and of `a` as the
+parameter of the maybe function. In fact, in Haskell, `Maybe` **is** a
+function, and `a` **is** a parameter to that function. As with a traditional
+function, when you pass a value to it, it evaluates into a result value, in
+this function, when you pass a type to it, it evaluates into a result type.
+So `Maybe a` is a type constructor, and when you pass a type to it, such as
+`Maybe Int`, it constructs a concrete type, which is similarly named `Maybe Int`.
+>>>>>>> Write first draft of type parameters
 
 This might seem at odds with the common non-parameterised types, but in fact,
 it isn't. Let's look for example into the type `Boolean`:
