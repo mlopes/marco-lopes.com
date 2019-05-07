@@ -39,7 +39,7 @@ The possibility of treating functions like this was developed and proved by
 mathematicians, amongst them Haskell Curry, after whom the technique was later
 named, as well as _Haskell_ the language.
 
-[![Haskell Curry](/assets/posts/images/HaskellBCurry.jpg){: .center-image }](/assets/posts/images/HaskellBCurryBirds.jpg)
+[![Haskell Curry](/assets/posts/images/HaskellBCurry.jpg){: .center-image .img-responsive }](/assets/posts/images/HaskellBCurryBirds.jpg)
 
 ## Uses of currying
 

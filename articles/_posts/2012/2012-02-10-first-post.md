@@ -10,7 +10,7 @@ author: "Marco Lopes"
 
 Hi,
 
-My name is Marco Lopes, and this is my latest attempt at writing a personal
+My name is [Marco Lopes](http://mlop.es/), and this is my latest attempt at writing a personal
 blog. Here I will more or less frequently post articles related to my
 interests.
 
