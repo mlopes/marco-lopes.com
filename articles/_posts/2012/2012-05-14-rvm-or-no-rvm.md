@@ -6,6 +6,10 @@ comments: true
 tags:
     - ruby
 ---
+
+**EDIT:** This POST is now very outdated, I haven't touched `rvm` in years,
+ the contents of this article probably don't reflect how to use `rvm` anymore.
+
 What made me write this post, was that today I came across a limitation of using the ruby version managing tool **rvm**. My point is, **rvm** is a very good tool, and an extremely well thought idea. But… only when managing a pure gem system. If any other kind of applications has dependencies on ruby, then using multiple version of ruby can lead to some issues.
 
 So, it all started when I decided to look for a plugin to preview markdown on vim. I quickly came across something called [vim-preview](http://www.vim.org/scripts/script.php?script_id=3344), which should let me do exactly that: preview various documentation formats directly from vim.

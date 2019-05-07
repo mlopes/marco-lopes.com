@@ -7,6 +7,11 @@ tags:
     - octopress
 author: "Marco Lopes"
 ---
+
+**EDIT:** This POST is now very outdated, and this blog is not even running on
+Octopress anymore, but in Jekyll. The contents of this article probably don't
+reflect how to use Octopress anymore.
+
 Just finished setting up Octopress. It took me quite some time, mainly because 
 the documentation is not great. It kind of assumes a level of experience 
 installing ruby applications, that I simply don't have.
