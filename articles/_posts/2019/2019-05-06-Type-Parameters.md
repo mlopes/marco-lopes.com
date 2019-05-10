@@ -97,7 +97,7 @@ jvm, but certainly the intuition applies.
 
 Having this intuition of type constructors and their behaviour as type level
 functions, is helpful in understanding more complex use cases of type
-parameterisation.s
+parameterisation.
 
 In the next part, we're going to talk about a specific parameterised type that
 has some properties that allows us to deal with effectful computations in a
