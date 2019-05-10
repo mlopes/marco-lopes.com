@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Type Parameters
-date: 2019-05-06 14:01
+date: 2019-05-10 18:59
 comments: true
 published: true
 image: /assets/posts/images/parameterisedTypes.jpg
