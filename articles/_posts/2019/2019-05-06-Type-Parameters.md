@@ -5,6 +5,7 @@ date: 2019-05-10 18:59
 comments: true
 published: true
 image: /assets/posts/images/parameterisedTypes.jpg
+summary: Type parameters, are a way to abstract over types in what is called parametric polymorphism.
 tags:
     - scala
     - haskell
