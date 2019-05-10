@@ -4,6 +4,7 @@ title: "What is Functional Programming - Part 2?"
 date: 2019-03-17 10:00
 comments: true
 published: true
+summary: In this chapter we're going to try to establish what functions are, how they're defined differently in different domains
 tags:
     - scala
     - haskell
