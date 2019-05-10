@@ -4,6 +4,7 @@ title: Type Parameters
 date: 2019-05-06 14:01
 comments: true
 published: true
+image: /assets/posts/images/parameterisedTypes.jpg
 tags:
     - scala
     - haskell
@@ -18,9 +19,7 @@ In the previous installments we've went into some detail about currying and part
 Before we move on to talk about effects, let's take a quick look into what are
 type parameters.
 
-# Type Parameters
-
-![Parameterised Types](/assets/posts/images/parameterisedTypes.jpg)
+![Parameterised Types](/assets/posts/images/parameterisedTypes.jpg){: .center-image .img-responsive }
 
 Type parameters, are a way to abstract over types in what is called parametric
 polymorphism.
@@ -59,19 +58,6 @@ and `Nothing` in this case. They are named data constructors because when
 called, they construct values of the type `Maybe`.
 
 On the left side, you have the type constructor. See, in the previous
-<<<<<<< HEAD
-<<<<<<< HEAD
-paragraph I called `Maybe` a type, well, I lied. You can think of `Maybe` as a
-function, and of `a` as the parameter of the maybe function. In fact, in
-Haskell, `Maybe` **is** a function, and `a` **is** a parameter to that
-function. As with a traditional function, when you pass a value to it, it
-evaluates into a result value, in this function, when you pass a type to it,
-it evaluates into a result type. So `Maybe a` is a type constructor, and when
-you pass a type to it, such as `Maybe Int`, it constructs a concrete type,
-which is similarly named `Maybe Int`.
-=======
-=======
->>>>>>> Edit type parameters article
 paragraph I called `Maybe` a type, well, I lied, `Maybe`, by itself is 
 not a type. You can think of `Maybe` as a function, and of `a` as the
 parameter of the maybe function. In fact, in Haskell, `Maybe` **is** a
@@ -80,7 +66,6 @@ function, when you pass a value to it, it evaluates into a result value, in
 this function, when you pass a type to it, it evaluates into a result type.
 So `Maybe a` is a type constructor, and when you pass a type to it, such as
 `Maybe Int`, it constructs a concrete type, which is similarly named `Maybe Int`.
->>>>>>> Write first draft of type parameters
 
 This might seem at odds with the common non-parameterised types, but in fact,
 it isn't. Let's look for example into the type `Boolean`:
@@ -116,4 +101,3 @@ parameterisation.s
 In the next part, we're going to talk about a specific parameterised type that
 has some properties that allows us to deal with effectful computations in a
 pure way. We're going to take a first look at an effect system.
-
