@@ -20,6 +20,8 @@ type parameters.
 
 # Type Parameters
 
+![Parameterised Types](/assets/posts/images/parameterisedTypes.jpg)
+
 Type parameters, are a way to abstract over types in what is called parametric
 polymorphism.
 The idea of type parameters, has some traits in common with the concept of
@@ -55,8 +57,6 @@ final case object None extends Option[Nothing]
 The right side of the `=`, contains what are called data constructors, `Just a`
 and `Nothing` in this case. They are named data constructors because when
 called, they construct values of the type `Maybe`.
-
-![Parameterised Types](/assets/posts/images/parameterisedTypes.jpg)
 
 On the left side, you have the type constructor. See, in the previous
 <<<<<<< HEAD
