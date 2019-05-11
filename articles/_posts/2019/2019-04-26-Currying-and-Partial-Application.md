@@ -143,8 +143,9 @@ val result = add3(5)
 // result: Int = 8
 ```
 
-Next in this series, we're going to take a look at type parameters, before
-diving into the basics of what is an effect system, and what benefits it can
-bring us.
+Next we're going to take a look at type parameters, before diving into the basics of
+what is an effect system, and what benefits it can bring us.
+
+<span class="next">[Next in this series: Type Parameters →](/articles/Type-Parameters/)</span>
 
 [^1]: The `$` is a precedence operator and it's there to tell the compiler to evaluate the `Just 5` before trying to apply `add2InF`. If it wouldn't be there, then it would try to apply `add2InF` to `Just` and then pass `5` as a parameter to the result. This would not type-check and therefore wouldn't compile.
