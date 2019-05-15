@@ -43,7 +43,7 @@ a simplified, stripped down version of the Haskell implementation, would look
 something like this:
 
 ```haskell
-date Maybe a = Just a | Nothing
+data Maybe a = Just a | Nothing
 ```
 
 In Scala it would look like:
