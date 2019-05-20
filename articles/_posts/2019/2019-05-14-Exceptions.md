@@ -59,9 +59,11 @@ also refer to months as `1` to `12`. So, we follow a similar pattern. We have
 a `fromInt` constructor that returns an `Option[Month]`, and so if we call
 `Month.fromInt(1)`, we get `Some(January)`. And then we have the constructor
 that creates a month from a refined type. Fortunately, you can pattern match
-on refined types, so we can write an elegant solution for this problem. But
-let's imagine we couldn't. How could we get a `Month` out of this integer,
-which we know for sure is a valid number between `1` and `12`?
+on refined types, so we can write an elegant solution for this problem, which
+I am not sure forces the match to be exhaustive. So, let's imagine we
+couldn't, because in dealing with integers we can't avoind the problem.
+How could we get a `Month` out of this integer, which we know for sure is a
+valid number between `1` and `12`?
 In this situation, there wouldn't be much more that we could do, other than
 extracting the integer value from the refined type and construct the `Month`
 using the integer type.
