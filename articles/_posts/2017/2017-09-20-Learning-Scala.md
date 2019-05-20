@@ -15,7 +15,7 @@ tags:
 This article describes a list of resources I've used to find my way into Scala development. For context of how relevant these resources might be to you, let me first give a quick description of my technical background.
 
 ## A Little Background
-I've been a developer for a very long time, and I have quite a lot of experience. I've done some Perl, years ago where I got familiarised with mapping, filtering and reducing, but, even though I've been interested in functional programming for a long time, I've never really had the time or will to really dive into it until a couple of years ago.
+I've been a developer for a very long time, and I have quite a lot of experience. I've done some Perl, years ago where I got familiarised with mapping, filtering and reducing, but, even though I've been interested in functional programming for a long time, I've never really had the time or will to really dive into it until a few years ago.
 
 This being said, lets get into the details about the resources and how they worked for me.
 
@@ -29,7 +29,7 @@ Even though the course is very good and teaches some very important language and
 ## Scala Exercises Website<span class="reference">[[2](https://www.scala-exercises.org/ "Scala Exercise Website")] </span>
 I have to confess, I didn't use this site that much, I've tried it for a bit, but never really got into it. The std lib exercises tended to feel academic, just like the ones in the Coursera course, and a lot of the examples seemed to lack context and some information seems to be known by the authors and assumed that everyone else will know it as well, making it hard to use as a learning resource. 
 
-Note that this is an Open Source effort and may therefore improve rapidly, so in spite of my sub-optimal experience, it's definitely worth to check this site. Also, it has exercises in a bunch of different widely used Scala libraries, such as `cats`, `shapeless` or `circe`.
+Note that this is an Open Source effort and may therefore improve rapidly, so in spite of my sub-optimal experience, it's definitely worth to check this site. Also, it has exercises in a diversity of widely used Scala libraries, such as `cats`, `shapeless` or `circe`.
 
 ## Learn You a Haskell for Great Good<span class="reference">[[3](http://learnyouahaskell.com/ "Learn You a Haskell for Great Good")] </span>
 "What is a Haskell book doing in here?", you ask. Well, a lot of people in the Scala community will point you towards this book, if you ask for a resource to learn Scala. Actually, a lot of people in any community for a functional language will point you towards this book.
@@ -61,6 +61,19 @@ If you've already managed to learn some Scala and have used pattern matching, op
 This is probably the perfect companion to the Learn You a Haskell book, as it will show you the "Scala way" for a lot of the concepts that you can learn on that book.
 It can either be read on the [author's blog](http://danielwestheide.com/scala/neophytes.html) online, or [bought](https://leanpub.com/theneophytesguidetoscala) in a variety of formats, at a price defined by you.
 
+## Scala with Cats<span class="reference">[[7](https://underscore.io/books/scala-with-cats/ "Scala with Cats")] </span>
+This is a great resource for more intermediate level users who are already
+familiar with the language and are looking into going further into the
+functional Scala world. This books has good examples of how type classes work
+and are implemented in Scala, along with usage examples. With this book you'll
+understand how to create your type classes or make your operations available
+using implicit classes, also known as extension methods. It also helps
+understand how cats is implemented, and how to use it.
+
+I strongly recomment this book if you're already comfortable with Scala and
+want to become a more advanced user of the language. _Scala with Cats_ can be
+found [here](https://underscore.io/books/scala-with-cats/).
+
 ## Other resources
 I haven't had the opportunity yet, but there's another Scala book that I've been told is very good and much more practical that the red book, which I want to take a look at, at some point.
 
@@ -68,3 +81,6 @@ Creating a real application using Scala, was easily the most efficient way of le
 
 ## Conclusion
 Those are the resources I've used to get myself to learn some Scala and start writing programs with it. Of course your mileage may vary but hopefully this list of resources will help you, find your way.
+
+I'll make sure to keep updating this article as I become aware of other
+resources for learning Scala, so be sure to check back.
