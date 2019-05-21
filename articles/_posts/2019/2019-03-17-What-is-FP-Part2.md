@@ -5,6 +5,7 @@ date: 2019-03-17 10:00
 comments: true
 published: true
 summary: In this chapter we're going to try to establish what functions are, how they're defined differently in different domains
+image: /assets/posts/images/fofx.jpg
 tags:
     - scala
     - haskell
@@ -26,6 +27,8 @@ _function_ in functional programming.
 
 In programming, the idea of function differs greatly from the idea of a
 function in mathematics, so let's first try to establish this difference.
+
+![Functions Wreck](/assets/posts/images/fofx.jpg){: .center-image .img-responsive }
 
 ## Functions in programming
 
