@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What is Functional Programming - Part 2?"
+title: "Defining Functions"
 date: 2019-03-17 10:00
 comments: true
 published: true
