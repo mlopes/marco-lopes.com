@@ -47,7 +47,7 @@ In _Haskell_, all functions are curried by default. This means that if you decla
 a function with more than one parameter, behind the scenes that functions just takes
 one parameter and returns another function that takes one parameter and so on.
 In _Scala_, functions are not inherently pure, so you have to manually curry a function,
-because if a function performs an effect the interpreter won't know if it can partially
+because if a function performs a side effect the interpreter won't know if it can partially
 apply it without breaking it's procedural order, for example, in the case of a function
 that requests input from the user, that action doesn't depend on the function inputs, but
 subsequent instructions on that function might. So, if you want a function to be curried,

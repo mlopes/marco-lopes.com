@@ -17,7 +17,7 @@ tags:
 <span class="prev">[← Previous in this series: Currying and Partial Application](/articles/Currying-and-Partial-Application/)</span>
 
 In the previous installments we've went into some detail about currying and partial application.
-Before we move on to talk about effects, let's take a quick look into what are
+Before we move on to talk about effect systems, let's take a quick look into what are
 type parameters.
 
 ![Parameterised Types](/assets/posts/images/parameterisedTypes.jpg){: .center-image .img-responsive }
