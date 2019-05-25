@@ -5,7 +5,7 @@ date: 2019-04-26 12:36
 comments: true
 published: true
 summary: In this article we're going to explain what is currying and partial application, as well as how they differ.
-image: /assets/posts/images/HaskellBCurry.jpg
+image: /assets/posts/images/Currying.jpg
 tags:
     - scala
     - haskell
@@ -39,7 +39,7 @@ The possibility of treating functions like this was developed and proved by
 mathematicians, amongst them Haskell Curry, after whom the technique was later
 named, as well as _Haskell_ the language.
 
-[![Haskell Curry](/assets/posts/images/HaskellBCurry.jpg){: .center-image .img-responsive }](/assets/posts/images/HaskellBCurryBirds.jpg)
+[![Haskell Curry](/assets/posts/images/Currying.jpg){: .center-image .img-responsive }](/assets/posts/images/HaskellBCurryBirds.jpg)
 
 ## Uses of currying
 
