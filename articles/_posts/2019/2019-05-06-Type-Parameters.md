@@ -16,7 +16,7 @@ tags:
 
 <span class="prev">[← Previous in this series: Currying and Partial Application](/articles/Currying-and-Partial-Application/)</span>
 
-In the previous installments we've went into some detail about currying and partial application.
+In the previous chapter we've went into some detail about currying and partial application.
 Before we move on to talk about effect systems, let's take a quick look into what are
 type parameters.
 
@@ -102,3 +102,5 @@ parameterisation.
 In the next part, we're going to talk about a specific parameterised type that
 has some properties that allows us to deal with effectful computations in a
 pure way. We're going to take a first look at an effect system.
+
+<span class="next">[Next in this series: Effects →](/articles/Effects/)</span>

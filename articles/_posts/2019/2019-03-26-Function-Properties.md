@@ -13,7 +13,7 @@ tags:
     - fp tutorial
 ---
 
-<span class="prev">[← Previous in this series: What is FP? - Part 2](/articles/What-is-FP-Part2/)</span>
+<span class="prev">[← Previous in this series: Defining Functions](/articles/What-is-FP-Part2/)</span>
 
 In the previous chapter, we've gone into the differences between expressions
 and statements and different definitions of functions.
