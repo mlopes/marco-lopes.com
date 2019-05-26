@@ -4,6 +4,8 @@ title: "OSD to show STDOUT from a command in XMonad"
 date: 2017-09-11 22:00
 comments: true
 published: true
+image: /assets/posts/images/xmonad.jpg
+summary: Xmonad is not only a great tilling window manager, but it's also a great way to get into Haskell, since its configuration file is written in Haskell.
 tags:
     - haskell
     - xmonad
@@ -14,6 +16,8 @@ Recently I've been looking a bit into Haskell. This has proven specially
 useful since I've been using XMonad as my primary window manager for some time
 now. This newly acquired understanding of Haskell allows me therefore to
 go a step further in the configuration of my working environment.
+
+![One of my Xmonad desktops](/assets/posts/images/xmonad.jpg){: .center-image .img-responsive }
 
 A few days ago, I've written some configuration to map a keybinding to an
 action where a command is ran, and then the output of that command is
