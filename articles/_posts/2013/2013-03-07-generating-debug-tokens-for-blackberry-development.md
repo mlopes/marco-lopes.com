@@ -3,6 +3,8 @@ layout: post
 title: "Debug Tokens for Blackberry Playbook development with NME"
 date: 2013-03-07 22:02
 comments: true
+image: /assets/posts/images/Playbook.jpg
+summary: Setting up a Blackberry Playbook for development can be a complex task. Here's the step by step instructions of how to set it up.
 tags:
     - blackberry
     - nme
@@ -13,6 +15,8 @@ tags:
 When I first started looking at generating debug tokens for the Blackberry Playbook, it was very hard to find the correct documentation on how to do it, and to distinguish between the deprecated and current ways of doing it.
 When my debug token expired, I had to generate a new one, and I immediately missed some documentation I could have created highlighting the steps I took when I did it the first time.
 After looking at some old e-mails and IRC logs, I was able to get enough information to do it again, and it even seems that the official documentation got improved. Nevertheless I decided to go ahead and document how I did it.
+
+![Playbook](/assets/posts/images/Playbook.jpg){: .center-image .img-responsive }
 
 ## How? ##
 
