@@ -4,6 +4,7 @@ title: Exceptions
 date: 2019-05-14 21:06
 comments: true
 published: true
+image: /assets/posts/images/BurnTheToast.jpg
 tags:
     - scala
     - exceptions
@@ -28,6 +29,8 @@ type is able to express error situations through the effect type. In Scala,
 if you're using cats, you'll likely have `ApplicativeError` and `MonadError`
 instances for your effect type, meaning there's even fewer reasons to throw
 exceptions.
+
+![An Exception Has Occurred: You've Burnt The Toast](/assets/posts/images/BurnTheToast.jpg){: .center-image .img-responsive }
 
 # Semantic Dissonance
 
