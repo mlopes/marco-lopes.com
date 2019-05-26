@@ -3,6 +3,8 @@ layout: post
 title: "More on TDD in Haxe/NME - Game Of Life"
 date: 2013-03-17 20:02
 comments: true
+image: /assets/posts/images/haxe.png
+summary: Munit is a testing tool for Haxe, with the right configurations it can be used for TDD and BDD. Here we see an example of applying Spec level BDD to drive the development of the Game of Life
 tags:
     - haxe
     - nme
@@ -14,6 +16,7 @@ tags:
 Recently I came across the [**Game of Life**](http://en.wikipedia.org/wiki/Conway_game_of_life) **code kata**, through [Marcello Duarte](https://twitter.com/_md), while doing some TDD practice in PHP.
 Due to the visual nature of this *game*, I decided to give it a try using Haxe. I had already done it in PHP a few times, and had established that there was nothing too complicated on the test, that would give me trouble with munit, or would require mocking (still haven't looked into mocking frameworks for Haxe ;) ).
 
+![Haxe](/assets/posts/images/haxe.png){: .center-image .img-responsive .no-border-img}
 
 My first effort to do it in Haxe/NME is available on github (<https://github.com/mlopes/NME-GameOfLife>). This post will focus on how that code was created.
 

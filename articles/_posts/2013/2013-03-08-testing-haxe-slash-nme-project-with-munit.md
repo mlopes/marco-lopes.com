@@ -4,6 +4,8 @@ title: "Testing Haxe/NME project with munit"
 date: 2013-03-08 11:15
 comments: true
 published: true
+image: /assets/posts/images/NME.png
+summary: TDD and BDD techniques can greatly improve a codebase. Here you'll be able to see how to apply spec level BDD to Haxe code.
 tags:
     - haxe
     - nme
@@ -14,6 +16,8 @@ tags:
 
 Anyone who ever used haxe as certainly noticed that it is a very promising language, with some very promising frameworks and libraries. NME specially is a very promising framework that didn't fail to amaze me on how good it is at getting a single codebase to compile to several platforms.
 On the other hand, all of these projects seem to miss documentations and some guidance in general, and for someone who's suddenly interested in giving it a try, it can be a bit painful to get going. I experienced such a situation recently when trying to do some TDD with haxe.
+
+![NME](/assets/posts/images/NME.png){: .center-image .img-responsive }
 
 ## What to choose? ##
 
