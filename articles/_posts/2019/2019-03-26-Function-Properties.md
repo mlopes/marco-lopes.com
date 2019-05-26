@@ -4,7 +4,7 @@ title: "Function Properties"
 date: 2019-03-17 10:00
 comments: true
 published: true
-summary: In functional programming, abstractions tend to be very generic and talk about properties of things
+summary: In functional programming, abstractions tend to be very generic and talk about properties of things. Properties of functions can be specially relevant.
 tags:
     - scala
     - haskell

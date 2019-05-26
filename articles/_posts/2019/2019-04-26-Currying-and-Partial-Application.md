@@ -4,7 +4,7 @@ title: Currying and Partial Application
 date: 2019-04-26 12:36
 comments: true
 published: true
-summary: In this article we're going to explain what is currying and partial application, as well as how they differ.
+summary: Currying and partial application are widely used in functional programming, understanding what they are and how they work is therefore essential
 image: /assets/posts/images/Currying.jpg
 tags:
     - scala

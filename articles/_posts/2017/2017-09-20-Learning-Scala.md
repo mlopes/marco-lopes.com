@@ -4,6 +4,7 @@ title: "Learning Scala"
 date: 2017-09-18 22:00
 comments: true
 published: true
+summary: What are the best available resources to get into Scala? This is a compilation of the resources I've personlally used, when getting into Scala, as well as after becoming a professional Scala developer
 tags:
     - scala
     - haskell

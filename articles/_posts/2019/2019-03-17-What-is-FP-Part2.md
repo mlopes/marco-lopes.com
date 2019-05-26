@@ -4,7 +4,7 @@ title: "Defining Functions"
 date: 2019-03-17 10:00
 comments: true
 published: true
-summary: In this chapter we're going to try to establish what functions are, how they're defined differently in different domains
+summary: What are functions, how do they differ across different domains?  We're going to try to establish a more formal definition of functions that allows us for extended reasoning
 image: /assets/posts/images/fofx.jpg
 tags:
     - scala
