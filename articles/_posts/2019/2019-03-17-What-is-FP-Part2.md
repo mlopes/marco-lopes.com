@@ -92,7 +92,7 @@ value. In `println(s"$x plus $y is {$n.toString}")` we're giving an instruction
 to perform some output, we can't apply variable substitution, reduce it, and
 in languages that actually implement it as a statement get a value out of it
 (Scala does return a value and implements it as a function, but more on that 
-on a future installment).
+on the next chapters).
 The former is an _expression_, the latter a _statement_.
 
 # Why is this distinction useful?
@@ -180,7 +180,7 @@ we define expressions and map from the input parameter values to the output valu
 The lack of a first class construct to distinguish between those two different
 things, is a huge hindrance in making developers aware of this difference.
 Languages like Haskell address this difference in a way that we'll look into
-in a future installment.
+in the next chapters.
 
 As a side note, these procedure like functions with no return type, usually
 expressed through `void`, are usually handled through the type system in typed
@@ -216,7 +216,7 @@ has a few effect systems available via 3rd party libraries namely cats.effect.IO
 Effect systems are part of what makes functional programming so powerful.
 
 However, effect systems are outside of the scope of this chapter, and will be
-addressed in a later installment.
+addressed in a later chapter.
 
 # Wrap Up
 
