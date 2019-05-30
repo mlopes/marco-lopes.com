@@ -4,6 +4,7 @@ title: "Learning Scala"
 date: 2017-09-18 22:00
 comments: true
 published: true
+image: /assets/posts/images/Learning.jpg
 summary: What are the best available resources to get into Scala? This is a compilation of the resources I've personlally used, when getting into Scala, as well as after becoming a professional Scala developer
 tags:
     - scala
@@ -11,7 +12,7 @@ tags:
     - learning
 ---
 
-## How I Got Into Scala
+# How I Got Into Scala
 
 This article describes a list of resources I've used to find my way into Scala development. For context of how relevant these resources might be to you, let me first give a quick description of my technical background.
 
@@ -19,6 +20,10 @@ This article describes a list of resources I've used to find my way into Scala d
 I've been a developer for a very long time, and I have quite a lot of experience. I've done some Perl, years ago where I got familiarised with mapping, filtering and reducing, but, even though I've been interested in functional programming for a long time, I've never really had the time or will to really dive into it until a few years ago.
 
 This being said, lets get into the details about the resources and how they worked for me.
+
+# Learning Scala and Functional Programming
+
+![Learning Scala and Functional Programming](/assets/posts/images/Learning.jpg){: .center-image .img-responsive }
 
 ## Functional Programming Principles in Scala<span class="reference">[[1](https://www.coursera.org/learn/progfun1 "Functional Programming Principles in Scala")] </span>
 Given the background described above, it comes as no surprise that I started my Scala experience by attending the online course Functional Programming in Scala, delivered by Martin Odersky on Coursera.
