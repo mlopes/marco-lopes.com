@@ -47,7 +47,7 @@ The book is really well written, with a light tone, and everything is well expla
 
 Learn You a Haskell is [available online](http://learnyouahaskell.com/chapters) as a html website, or can be [bought](https://www.nostarch.com/lyah.htm) in a variety of formats. Additionally, you can generate a kindle version from [this](https://github.com/igstan/learn-you-a-haskell-kindle) GitHub project.
 
-## Functional Programming in Scala(red book)<span class="reference">[[4](https://www.amazon.co.uk/Functional-Programming-Scala-Paul-Chiusano/dp/1617290653/ "Functional Programming in Scala")] </span>
+## Functional Programming in Scala(red book)<span class="reference">[[4](https://amzn.to/2XjBiNt "Functional Programming in Scala")] </span>
 I've never managed to finish this one, which is not surprising, seeing as I've seen one of the authors proudly ask for a raise of hands at a talk in a conference, to show how many people never finish this book. It's the exact opposite of Learn You a Haskell. It sounds pretentious, mixes concepts that are completely out of place immediately in the first chapters, just to tell you not to worry about them yet because they're too advanced for you at this point. After getting some experience with Scala, I realised that this book can be a good reference if you're interested in learning the language syntax and semantics more in depth, but not really a good resource as an introduction for someone wanting to start learning Scala. Also not what I would recommend to learn functional programming itself, and the  type of code used in the book is far removed from what you'd be doing on a daily basis, independently of if you're using Scala for FP or OO.
 
 This being said, a lot of people swear by it, so might still be worth it to take a look and see what you think.
@@ -81,7 +81,7 @@ want to become a more advanced user of the language. _Scala with Cats_ can be
 found [here](https://underscore.io/books/scala-with-cats/).
 
 ## Other resources
-I haven't had the opportunity yet, but there's another Scala book that I've been told is very good and much more practical that the red book, which I want to take a look at, at some point.
+Currently I'm starting "Functional Programming for Mortals". It's another Scala book that I've been told is very good and much more practical that the red book, it's very focused on Scalaz. I'll update this as soon as I finish reading it.
 
 Creating a real application using Scala, was easily the most efficient way of learning Scala, and understanding how to use it for a real life situation (as opposed to the more academic maths exercises found in resources like the Coursera course).
 
