@@ -127,5 +127,7 @@ they can make a pull request ;) ).
 This is, in my opinion, the reasonable use for an exception, to deal with a
 code-path that can't be prevented, but should never be triggered. If for some
 reason it is triggered, that's really exceptional, and we want to know about it.
-Anything else, is using exceptions for control flow, and it's a design smell.
+Anything else, is using exceptions for control flow, and it's a design smell
+and as to be used wisely as it strongly affects the maintainability of a
+codebase.
 
