@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Case for Exceptions?
-date: 2019-06-02 21:06
+date: 2019-06-04 06:32
 comments: true
 published: true
 image: /assets/posts/images/BurnTheToast.jpg
