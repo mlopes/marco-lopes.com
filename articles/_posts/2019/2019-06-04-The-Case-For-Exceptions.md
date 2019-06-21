@@ -36,7 +36,7 @@ exceptions.
 
 # Semantic Dissonance
 
-I develop a developing a library for idiomatic representation of date
+I've been developing a library for idiomatic representation of date
 and time values in Scala. The idea is that it allows representation of these
 values in a way that is type safe, can be pattern matched, etc.
 
