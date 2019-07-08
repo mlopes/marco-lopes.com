@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Abstracting Over Effect Types
-date: 2019-06-21 20:16
+date: 2019-06-24 10:16
+summary: Abstracting over effect types allows you to control and express intention in your application. We're going to take a look at how to abstract over effect types using parametric polymorphism along with type class constraints
+image: /assets/posts/images/AbstractingOverEffects.jpg
 comments: true
 published: true
 tags:
@@ -28,6 +30,8 @@ lot more than we need, or even desire to make possible in certain parts of the
 code. On the other hand, it is also "closed", in the functionality that it
 carries with it. In the case of our example, we were stuck with whatever
 functionality `cats.effect.IO` provides, and that's it.
+
+![Abstracting Over Effect Types](/assets/posts/images/AbstractingOverEffects.jpg){: .center-image .img-responsive }
 
 # Principle of the Least Powerful Abstraction
 
@@ -85,7 +89,7 @@ contrast to parametric polymorphism (our `A` in `Option`), and early binding
 ad hoc polymorphism (inheritance). In Haskell you define a type class using
 the keyword `class`, you can then define type class instances with the keyword
 `instance` or, if it's possible to derive the type class for a type, using the
-`deriving` keyword. In Scala declaring type classes is quite an ugly
+`deriving` keyword. In Scala declaring type classes is quite a ugly
 workaround. [^2]
 
 The intuition for a type class can be, in my opinion, better explained by
@@ -118,7 +122,7 @@ has to have an instance of `MyTypeClass` available in the scope where `MyType`
 is used by declaring it like this `MyType[A: MyTypeClasss]`. And now, we know that `A`
 supports whatever functionality `MyTypeClass` provides. So `A` is less
 polymorphic that the `A` in `Option`, but it also means that by making it less
-polymorphic, there's more we know about it and more we can do with it.
+polymorphic, there's more we know about it and more we can do with it [^3].
 
 We've talked before about how type constructors are functions, and that some
 types have kind `* -> *`, also known as higher kinded types. `IO` is one such type
@@ -171,3 +175,5 @@ adding functionality to `F[_]` using MTL style and type classes.
 [^1]: On a bit of a side note, let me just say that I have no intention of going into an explanation of concepts of category theory, and my previous question is about what is `Functor` and not what is *a* functor. If you want to learn more about category theory, I recommend reading [Learn You a Haskell for Great Good](http://learnyouahaskell.com/chapters) which is also available as a [paper book](https://amzn.to/30ZWcU1), or as a [kindle book](https://github.com/igstan/learn-you-a-haskell-kindle). If you're interested in understanding the maths behind it as well, I recommend Bartosz Milewski's [youtube videos](https://www.youtube.com/watch?v=I8LbkfSSR58&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_), and also the [blog posts](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) which are available as a [paper book](https://www.blurb.com/b/9008339-category-theory-for-programmers) as a [kindle book](https://github.com/mlopes/category-theory-for-programmers-kindle) or as a [pdf](https://github.com/hmemcpy/milewski-ctfp-pdf/).
 
 [^2]: This article intentionally doesn't go into the syntax for defining type classes, as it is unnecessary noise for the purpose of the message it tries to pass across. If you're interested in knowing how to write your own type classes in Scala, I recommend [this blog post](https://danielwestheide.com/blog/2013/02/06/the-neophytes-guide-to-scala-part-12-type-classes.html) by Daniel Westheide.
+
+[^3]: For more details about how polymorphism has an inverse relationship with functionality, see this [talk by Rúnar Bjarnason](https://www.youtube.com/watch?v=GqmsQeSzMdw)
