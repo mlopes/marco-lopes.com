@@ -5,6 +5,7 @@ date: 2019-03-17 10:00
 comments: true
 published: true
 summary: In functional programming, abstractions tend to be very generic and talk about properties of things. Properties of functions can be specially relevant.
+image: /assets/posts/images/FunctionProperties.jpg
 tags:
     - scala
     - haskell
@@ -31,6 +32,8 @@ properties it abstract over are very well defined.
 The function abstraction is not conceptually different in FP than it is in
 other paradigms, but properties of functions are at the very core of FP, and
 awareness of those properties heavily shape FP code.
+
+![Functions](/assets/posts/images/FunctionProperties.jpg){: .center-image .img-responsive }
 
 # Functions
 

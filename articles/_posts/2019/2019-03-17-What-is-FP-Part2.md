@@ -28,7 +28,7 @@ _function_ in functional programming.
 In programming, the idea of function differs greatly from the idea of a
 function in mathematics, so let's first try to establish this difference.
 
-![Functions Wreck](/assets/posts/images/fofx.jpg){: .center-image .img-responsive }
+![Functions](/assets/posts/images/fofx.jpg){: .center-image .img-responsive }
 
 ## Functions in programming
 
