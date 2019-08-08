@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Vim and Haskell in 2019
-date: 2019-08-08 13:50
+date: 2019-08-08 18:50
 comments: true
 published: true
+summary: Vim is a very powerful editor, here's how it can be set up for programming in Haskell given the state of development of the available tools
+image: /assets/posts/images/vim-haskell-lint.png
 tags:
     - vim
     - neovim
