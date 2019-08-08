@@ -11,7 +11,7 @@ tags:
 ---
 
 I have recently decided to update my vim configuration for Haskell which had
-been set up back in 2017, following the instructions from the "[Vim and Haskell in 2016](http://www.stephendiehl.com/posts/vim_2016.html)"
+been set up back in 2017 following the instructions from the "[Vim and Haskell in 2016](http://www.stephendiehl.com/posts/vim_2016.html)"
 blog post. I was pleasently surprised to find out that things seem to have
 evolved quite a bit since then, and that Haskell in vim is now pretty feature rich.
 
@@ -55,14 +55,13 @@ plugins to get the most out of vim while editing Haskell projects.
 We're going to be using the following plugins:
 
 - `neoclide/coc.nvim`
-- `neovimhaskell/haskell-vim` - haskell-vim provides more advanced syntax highlighting for haskell than what you'd get out of the box
+- `neovimhaskell/haskell-vim`
 - `alx741/vim-hindent` or `alx741/vim-stylishask`
 - `mpickering/hlint-refactor-vim`
-- `w0rp/ale`
 
 I'm not going to provide specific instructions on how to install each plugin
-as those instructions can be found on each of the plugin's page. The
-instructions will also depend on which plugin manager you're using. I
+as those instructions can be found on each plugin's page. The instructions
+are also very simple, and will depend on which plugin manager you're using. I
 personally prefer to use vim plugger so, assuming I have plugger installed and 
 configured, I just add the following to my configuration, then reload the
 configuration and run `PlugUpdate`:
@@ -72,7 +71,6 @@ Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'neovimhaskell/haskell-vim'
 Plug 'alx741/vim-hindent'
 Plug 'mpickering/hlint-refactor-vim'
-Plug 'w0rp/ale'
 ```
 
 ## coc.vim
@@ -98,6 +96,32 @@ will be `K`:
 As you can see in the screenshot, it gives you not just the declared type but
 also the infered type for the current context.
 
+To also get linting, you'll need to change to `true` the `hlintOn` setting which in
+the example configuration is set to `false`. So, in vim do `:CocConfig`, which
+will open coc.vim's configuration file, and change the Haskell language server
+configuration to:
+
+```
+"haskell": {
+    "command": "hie-wrapper",
+    "rootPatterns": [".stack.yaml", "cabal.config", "package.yaml"],
+    "filetypes": ["hs", "lhs", "haskell"],
+    "initializationOptions": {},
+    "settings": {
+	"languageServerHaskell": {
+		"hlintOn": true,
+		"maxNumberOfProblems": 10,
+		"completionSnippetsOn": true
+	}
+     }
+  }
+```
+
+Now you should be able to see linting suggestions, which we should be able to
+automatically apply once we install `hlint-refactor-vim`:
+
+![Seeing linting suggestions](/assets/posts/images/vim-haskell-lint.png){: .center-image .img-responsive }
+
 
 ## haskell-vim
 
@@ -110,10 +134,6 @@ and therefore work well with haskell-vim.
 
 These plugins use `hindent` and `stylish-haskell` to auto-format the file on
 save. That's it really, they just help you stick to a coding style convention.
-
-## ale
-
-NOT NEEDED WE CAN JUST TURN HLINT ON IN THE COC.VIM CONFIG!!!!
 
 ## hlint-refactor-vim
 
