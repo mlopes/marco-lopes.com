@@ -17,7 +17,7 @@ been set up back in 2017 following the instructions from the "[Vim and Haskell i
 blog post. I was pleasantly surprised to find out that things seem to have
 evolved quite a bit since then, and that Haskell in vim is now pretty feature rich.
 
-# (Neo)Vim
+## (Neo)Vim
 
 First, let me clear up that I'm not actually using vim, but instead I'm using neovim.
 For those not familiar with neovim, it's a fork of vim that had a bit of a
@@ -33,7 +33,7 @@ system varies with which system you're running, instructions for different
 systems can be found on 
 [neovim's documentation](https://github.com/neovim/neovim/wiki/Installing-Neovim).
 
-# Haskell Tools
+## Haskell Tools
 
 The Haskell tooling ecosystem is very rich, and vim plugins make use of those
 tools to provide functionality. Here's a list of the tools we want to have
@@ -50,7 +50,7 @@ documentation. Haskell Ide Engine specifically, has a slightly different
 installation process and `hie-wrapper` won't work correctly unless it is
 compiled with the same version of `ghc` as the project you're using it with.
 
-# Vim plugins
+## Vim plugins
 
 Once these tools are up and running, we now need to set up the required vim
 plugins to get the most out of vim while editing Haskell projects.
@@ -68,14 +68,14 @@ personally prefer to use vim plugger so, assuming I have plugger installed and
 configured, I just add the following to my configuration, then reload the
 configuration and run `PlugUpdate`:
 
-```
+```vim
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'neovimhaskell/haskell-vim'
 Plug 'alx741/vim-hindent'
 Plug 'mpickering/hlint-refactor-vim'
 ```
 
-## coc.vim
+### coc.vim
 
 coc.vim is described as "an intellisense engine for vim8 & neovim", it will
 use `hie` as the backend to provide intelligent suggestions, code navigation and
@@ -103,7 +103,7 @@ the example configuration is set to `false`. So, in vim do `:CocConfig`, which
 will open coc.vim's configuration file, and change the Haskell language server
 configuration to:
 
-```
+```json
 "haskell": {
     "command": "hie-wrapper",
     "rootPatterns": [".stack.yaml", "cabal.config", "package.yaml"],
@@ -125,33 +125,33 @@ automatically apply once we install `hlint-refactor-vim`:
 ![Seeing linting suggestions](/assets/posts/images/vim-haskell-lint.png){: .center-image .img-responsive }
 
 
-## haskell-vim
+### haskell-vim
 
 haskell-vim gives you a more Haskell and contextually aware syntax highlighting.
 It's worth it to be aware that not every theme will play well with this
 plugin, but most quality themes will provide a complete colour configuration
 and therefore work well with haskell-vim. 
 
-## vim-hindent or vim-stylishask
+### vim-hindent or vim-stylishask
 
 These plugins use `hindent` and `stylish-haskell` to auto-format the file on
 save. That's it really, they just help you stick to a coding style convention.
 
-## hlint-refactor-vim
+### hlint-refactor-vim
 
 This plugin uses hlint's refactor functionality to apply the suggestions made
 by hlint to the current file, or the code under the cursor. By default `to`
 will apply changes to the code under the cursor, and `ta` will apply all the
 suggested changes in the file.
 
-## Other plugins
+### Other plugins
 
 I use a number of other plugins that provide me with common functionality that
 is also useful when writing Haskell, but that are not specifically related to
 writing Haskell. The list of all plugins I use can be found
 [here](https://github.com/mlopes/dotfiles/blob/11c48026bb707937193b03b364b02ac0ad2886ad/.local/share/nvim/site/config/plugins.vim).
 
-# Conclusion
+## Conclusion
 
 And that's it really, with these plugins, and some basic configuration, I have
 smart code completion, smart code navigation, information about the code and 
