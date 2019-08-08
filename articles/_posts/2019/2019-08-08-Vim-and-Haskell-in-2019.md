@@ -12,7 +12,7 @@ tags:
 
 I have recently decided to update my vim configuration for Haskell which had
 been set up back in 2017 following the instructions from the "[Vim and Haskell in 2016](http://www.stephendiehl.com/posts/vim_2016.html)"
-blog post. I was pleasently surprised to find out that things seem to have
+blog post. I was pleasantly surprised to find out that things seem to have
 evolved quite a bit since then, and that Haskell in vim is now pretty feature rich.
 
 # (Neo)Vim
@@ -20,13 +20,13 @@ evolved quite a bit since then, and that Haskell in vim is now pretty feature ri
 First, let me clear up that I'm not actually using vim, but instead I'm using neovim.
 For those not familiar with neovim, it's a fork of vim that had a bit of a
 code cleanup and was initially focused on being a version of vim with support
-for asyncronous plugins. At this point in time, vim 8 has been out for a while
-and the asyncronous plugin support has stopped being an issue in vim, but
+for asynchronous plugins. At this point in time, vim 8 has been out for a while
+and the asynchronous plugin support has stopped being an issue in vim, but
 there's still some interesting features in neovim, like floating windows,
-availabile at the moment only in the nightly builds, this is going to be
+available at the moment only in the nightly builds, this is going to be
 required, in order to get the full functionality that I'll be describing here.
 
-I'm runnign neovim `0.4.0-dev`, the way to get these nightly builds on your
+I'm running neovim `0.4.0-dev`, the way to get these nightly builds on your
 system varies with which system you're running, instructions for different
 systems can be found on 
 [neovim's documentation](https://github.com/neovim/neovim/wiki/Installing-Neovim).
@@ -35,7 +35,7 @@ systems can be found on
 
 The Haskell tooling ecosystem is very rich, and vim plugins make use of those
 tools to provide functionality. Here's a list of the tools we want to have
-installed, in our path, in order for those pluggins to work:
+installed, in our path, in order for those plugins to work:
 
 - haskell ide engine (`hie` and `hie-wrapper`) ([installation instructions](https://github.com/haskell/haskell-ide-engine/#installation))
 - `hlint` ([installation instructions](https://github.com/ndmitchell/hlint#installing-and-running-hlint))
@@ -44,7 +44,7 @@ installed, in our path, in order for those pluggins to work:
 
 Typically you'll install these tools by running `stack install <tool name>`,
 but to be on the safe side, follow the instructions on the tool's
-documenation. Haskell Ide Engine specifically, has a slightly different
+documentation. Haskell Ide Engine specifically, has a slightly different
 installation process and `hie-wrapper` won't work correctly unless it is
 compiled with the same version of `ghc` as the project you're using it with.
 
@@ -76,7 +76,7 @@ Plug 'mpickering/hlint-refactor-vim'
 ## coc.vim
 
 coc.vim is described as "an intellisense engine for vim8 & neovim", it will
-use `hie` as the backend to provide inteligent suggestions, code navigation and
+use `hie` as the backend to provide intelligent suggestions, code navigation and
 show errors.
 
 You'll need to set up `hie` as the language server, Haskell specific
@@ -94,7 +94,7 @@ will be `K`:
 ![Seeing the type of the expression under the cursor](/assets/posts/images/vim-haskell.png){: .center-image .img-responsive }
 
 As you can see in the screenshot, it gives you not just the declared type but
-also the infered type for the current context.
+also the inferred type for the current context.
 
 To also get linting, you'll need to change to `true` the `hlintOn` setting which in
 the example configuration is set to `false`. So, in vim do `:CocConfig`, which
