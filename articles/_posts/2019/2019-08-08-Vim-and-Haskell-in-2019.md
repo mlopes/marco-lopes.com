@@ -30,7 +30,7 @@ required, in order to get the full functionality that I'll be describing here.
 
 I'm running neovim `0.4.0-dev`, the way to get these nightly builds on your
 system varies with which system you're running, instructions for different
-systems can be found on 
+systems can be found on
 [neovim's documentation](https://github.com/neovim/neovim/wiki/Installing-Neovim).
 
 ## Haskell Tools
@@ -58,21 +58,21 @@ We're going to be using the following plugins:
 
 - `neoclide/coc.nvim`
 - `neovimhaskell/haskell-vim`
-- `alx741/vim-hindent` or `alx741/vim-stylishask`
-- `mpickering/hlint-refactor-vim`
+- `alx741/vim-hindent` or `alx741/vim-stylishask` (optional)
+- ~~`mpickering/hlint-refactor-vim`~~
 
 I'm not going to provide specific instructions on how to install each plugin
 as those instructions can be found on each plugin's page. The instructions
 are also very simple, and will depend on which plugin manager you're using. I
-personally prefer to use vim plugger so, assuming I have plugger installed and 
+personally prefer to use vim plugger so, assuming I have plugger installed and
 configured, I just add the following to my configuration, then reload the
 configuration and run `PlugUpdate`:
 
 ```vim
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'neovimhaskell/haskell-vim'
-Plug 'alx741/vim-hindent'
-Plug 'mpickering/hlint-refactor-vim'
+Plug 'alx741/vim-hindent' " Optional
+" Plug 'mpickering/hlint-refactor-vim'
 ```
 
 ### coc.vim
@@ -105,18 +105,18 @@ configuration to:
 
 ```json
 "haskell": {
-    "command": "hie-wrapper",
-    "rootPatterns": [".stack.yaml", "cabal.config", "package.yaml"],
-    "filetypes": ["hs", "lhs", "haskell"],
-    "initializationOptions": {},
-    "settings": {
-	"languageServerHaskell": {
-		"hlintOn": true,
-		"maxNumberOfProblems": 10,
-		"completionSnippetsOn": true
-	}
-     }
+  "command": "hie-wrapper",
+  "rootPatterns": [".stack.yaml", "cabal.config", "package.yaml"],
+  "filetypes": ["hs", "lhs", "haskell"],
+  "initializationOptions": {},
+  "settings": {
+    "languageServerHaskell": {
+      "hlintOn": true,
+      "maxNumberOfProblems": 10,
+      "completionSnippetsOn": true
+    }
   }
+}
 ```
 
 Now you should be able to see linting suggestions, which we should be able to
@@ -130,19 +130,37 @@ automatically apply once we install `hlint-refactor-vim`:
 haskell-vim gives you a more Haskell and contextually aware syntax highlighting.
 It's worth it to be aware that not every theme will play well with this
 plugin, but most quality themes will provide a complete colour configuration
-and therefore work well with haskell-vim. 
+and therefore work well with haskell-vim.
 
-### vim-hindent or vim-stylishask
+### vim-hindent or vim-stylishask (Optional)
 
-These plugins use `hindent` and `stylish-haskell` to auto-format the file on
-save. That's it really, they just help you stick to a coding style convention.
+You'll only require any of these if you want to follow the coding standards
+enforced by these tools. Alternatively, you can skip these completely and use
+coc.vim's formatting feature. A keybiding for `:call CocAction('format')` is
+all that's required:
 
-### hlint-refactor-vim
+```vim
+ nnoremap <leader> F :call CocAction('format')<CR>
+ ```
 
-This plugin uses hlint's refactor functionality to apply the suggestions made
+If for some reason you'd prefer to use `vim-hindent` or `stylish-haskell`
+instead, these plugins use `hindent` and `stylish-haskell` to auto-format the
+file on save.
+
+### ~~hlint-refactor-vim~~
+
+Turns out you can get coc.vim to do refactoring for you without the need for
+an extra plugin. This was pointed out to me on reddit.
+Setting up a keybiding for the `coc-fix-current` action, would do the trick:
+
+```vim
+nmap <leader>qf  <Plug>(coc-fix-current)
+```
+
+~~This plugin uses hlint's refactor functionality to apply the suggestions made
 by hlint to the current file, or the code under the cursor. By default `to`
 will apply changes to the code under the cursor, and `ta` will apply all the
-suggested changes in the file.
+suggested changes in the file.~~
 
 ### Other plugins
 
@@ -154,7 +172,7 @@ writing Haskell. The list of all plugins I use can be found
 ## Conclusion
 
 And that's it really, with these plugins, and some basic configuration, I have
-smart code completion, smart code navigation, information about the code and 
+smart code completion, smart code navigation, information about the code and
 types, error, linting and automatic refactoring, all without leaving vim.
 
 All in all, Haskell with vim in 2019 is in a pretty good place.
