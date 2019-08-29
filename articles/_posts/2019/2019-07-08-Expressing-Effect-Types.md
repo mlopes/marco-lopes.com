@@ -4,16 +4,22 @@ title: Expressing Effect Types
 date: 2019-07-08 20:43
 comments: true
 published: true
+summary: We can use effect types to express intention using MTL style and by creating our own custom effects. But what are the benefits and downsides of doing this?
+image: /assets/posts/images/SmokeAndMirrors.jpg
 tags:
     - scala
     - haskell
 ---
+
+<span class="prev">[← Previous in this series: Abstracting Over Effect Types](/articles/Abstracting-Over-Effect-Types/)</span>
 
 In the last chapter we talked about abstracting over effect types. We've
 mentioned that concrete effect types were both too powerful, they let us do
 too much, and also too weak, they carried a limited set of functionalities.
 We've seen already how to restrict the functionality of the effect type, now
 we're going to look into how to extend its functionality.
+
+![Mind Bending MTL](/assets/posts/images/SmokeAndMirrors.jpg){: .center-image .img-responsive }
 
 ## MTL
 
@@ -39,7 +45,7 @@ With `EitherT`, we could do it directly.
 
 How does this relate to effects then? 
 
-## Monad Stacks
+## Monad Stacks
 
 Monad transformers are often used to create what are called monad stacks,
 which basically means nested monad transformers, with a monad at the end of
@@ -47,9 +53,9 @@ the nesting stack. So, if you want to pass around some context with your
 effect type, you could have a stack with a `ReaderT[F, C, A]` where `C` would
 be the type of your context, and `A` the type your effect will produce. If you
 wanted to pass some state around, you could extend your stack to also be a
-StateT, this is usually done via declaring type aliases or using the
-`kind-projector` plugin, as the syntax for this kind of thing in Scala tends
-to get ugly really quickly.
+`StateT`, this is usually done via declaring type aliases or/and using the
+[kind-projector](https://github.com/typelevel/kind-projector) plugin, as the
+syntax for this kind of thing in Scala tends to get ugly really quickly.
 
 The problem with this approach though, is that code complexity increases
 greatly and all of this is a convenience layer, as you can still pass state or
@@ -62,10 +68,10 @@ type classes for the more common monad transformers that allow you to
 constraint your effect type so that your whole application still only knows
 about an `F` for which some functionality is available.
 
-##  Custom Effects
+## Custom Effect
 
 Another way to extend an effect type, is to create type classes for the
-specific type of effect you're performing. Let's say you'r application
+specific type of effect you're performing. Let's say your application
 accesses a database, you could have a `DbTransactor[F]` type class, have an
 instance for the effect type you are using, and then constrain your type
 `F[_]: DbTransactor[F]`. There's an argument for doing this, some people say
@@ -73,9 +79,15 @@ it's expressive in the sense that it tells you what kind of effect your `F` is
 capable of performing, which is more specific that just saying it can delay
 effects. This argument comes from the fact that in Scala functions are not
 inherently pure, and `Sync` is a type class that carries the very generic
-information that this function intends to delay an effect. Again.
+information that this function intends to delay an effect. Again, we could as
+well pass these explicitly rather than bundle it with the effect type. There's
+probably more of an argument for the benefits on this approach as it can be
+more expressive from the perspective of the effect type and the complexity cost
+is not as high as it tend to become with monad transformers. On the other
+hand, we lose expressiveness on the caller side as our dependency stops being
+injected explicitly.
 
-## Conclusion
+## Conclusion
 
 If this chapter feels somewhat vague, that's because it is. It talks about
 techniques that can be applied to achieve certain goals, but those techniques
